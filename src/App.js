@@ -23,14 +23,14 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/h2tc" element={<Home />} />
           <Route path="/Screen" element={<Screen />} />
           <Route path="/turbine" element={<Turbine />} />
           <Route path="/genplant" element={<Genplant />} />
           <Route path="/siemens" element={<Siemens />} />
           <Route path="/politicians" element={<Politicians />} />
           <Route path="/landing" element={<Landing />} />
-          <Route path="/h2tc" element={<H2TC />} />
+          <Route path="/h2tcenter" element={<H2TC />} />
           <Route path="/plant1" element={<Plant1 />} />
           <Route path="/plant2" element={<Plant2 />} />
           <Route path="/micro" element={<Micro />} />

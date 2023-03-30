@@ -21,7 +21,7 @@ const Turbine = () => {
       }}
     >
       <p  style={{padding: 20}}>Offshore wind out in the Atlantic Ocean off the Shore of Virginia Beach</p>
-      <a href='/'><button >Back</button></a>
+      <a href='/h2tc'><button >Back</button></a>
     </div>
   );
 };
@@ -38,7 +38,7 @@ const Genplant = () => {
       }}
     >
       <p  style={{padding: 20}}>Details coming soon</p>
-      <a href='/'><button >Back</button></a>
+      <a href='/h2tc'><button >Back</button></a>
     </div>
   );
 };
@@ -55,7 +55,7 @@ const Siemens = () => {
       }}
     >
       <p  style={{padding: 20}}>This list will grow as we understand the players better. These players will be inside of the minigrids and hydrogen electrolysis plants.</p>
-      <a href='/'><button >Back</button></a>
+      <a href='/h2tc'><button >Back</button></a>
     </div>
   );
 };
@@ -75,7 +75,7 @@ const Politicians = () => {
         Governor in Virginia<br/>
         Senators in DC
       </p>
-      <a href='/'><button >Back</button></a>
+      <a href='/h2tc'><button >Back</button></a>
     </div>
   );
 };
@@ -95,7 +95,7 @@ const Landing = () => {
         This is where the electricity will come in from the offshore wind and be stored in a battery bank.
       </p>
 
-      <a href='/'><button >Back</button></a>
+      <a href='/h2tc'><button >Back</button></a>
     </div>
   );
 };
@@ -113,7 +113,7 @@ const H2TC = () => {
     >
       <p  style={{padding: 20}}>The H2TC - 700 Tech Center Parkway, Newport News VA</p>
 
-      <a href='/'><button >Back</button></a>
+      <a href='/h2tc'><button >Back</button></a>
     </div>
   );
 };
@@ -133,7 +133,7 @@ const Plant1 = () => {
         The Landing at Virginia Beach - 203 Red Horse Dr, Virginia Beach, VA
       </p>
 
-      <a href='/'><button >Back</button></a>
+      <a href='/h2tc'><button >Back</button></a>
     </div>
   );
 };
@@ -153,7 +153,7 @@ const Plant2 = () => {
         Newport News Tech Center - 700 Tech Center Parkway, Newport News, VA
       </p>
 
-      <a href='/'><button >Back</button></a>
+      <a href='/h2tc'><button >Back</button></a>
     </div>
   );
 };
@@ -171,7 +171,7 @@ const Micro = () => {
     >
       <p  style={{padding: 20}}>Microgrid - 700 Tech Center Parkway, Newport News VA</p>
 
-      <a href='/'><button >Back</button></a>
+      <a href='/h2tc'><button >Back</button></a>
     </div>
   );
 };
@@ -189,7 +189,7 @@ const Dominion = () => {
     >
       <p  style={{padding: 20}}>Dominion Power - 551 Industrial Park, Dr., Newport News, VA</p>
 
-      <a href='/'><button >Back</button></a>
+      <a href='/h2tc'><button >Back</button></a>
     </div>
   );
 };
@@ -207,7 +207,7 @@ const VNG = () => {
     >
       <p  style={{padding: 20}}>Virginia Natural Gas - 746 Diligence Dr., Newport News, VA</p>
 
-      <a href='/'><button >Back</button></a>
+      <a href='/h2tc'><button >Back</button></a>
     </div>
   );
 };

@@ -161,7 +161,7 @@ const Home = () =>{
         <body className="App-header">
           <Link to="/turbine" style={icon}><GiWindTurbine /></Link>
           <Link to="/landing" style={icon1}><FaCarBattery /></Link>
-          <Link to="/h2tc" style={icon2}><GiFamilyHouse /></Link>
+          <Link to="/h2tcenter" style={icon2}><GiFamilyHouse /></Link>
           <Link to="/plant1" style={icon3}><GiFactory /></Link>
           <Link to="/plant2" style={icon4}><GiFactory /></Link>
           <Link to="/micro" style={icon5}><BsBuildings /></Link>
