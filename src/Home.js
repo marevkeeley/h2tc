@@ -71,7 +71,7 @@ const Home = () =>{
                 {
                   close => (
                     <div>
-                      <img src={smallmap} style={{scale: '80%', position: 'relative', top: -60}}/>
+                      <img src={smallmap} style={{scale: '80%', position: 'relative', top: -60}} alt='Map of Hampton Roads'/>
                       <button style={{top: '3%', left: '84%', position: 'absolute'}}onClick={() => {close()}}>Close</button>
                       <Link to="/turbine" style={Object.assign({left: '78%', top: '64%'}, icon2)}><GiWindTurbine /></Link>
                       <Link to="/landing" style={Object.assign({left: '76%', top: '64%'}, icon2)}><GiFactory /></Link>
