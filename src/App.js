@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
   
 import Home from "./Home";
-import {Screen, Turbine, Genplant, Siemens, Politicians, Landing, H2TC, Plant1, Plant2, Micro, Dominion, VNG} from "./Screen";
+import {Screen, Turbine, Genplant, Siemens, Politicians, Landing, H2TC, TechC, Micro, Dominion, VNG} from "./Screen";
 // import User1 from "./Screen";
 // import User2 from "./Screen";
 // import User3 from "./Screen";
@@ -31,8 +31,7 @@ function App() {
           <Route path="/politicians" element={<Politicians />} />
           <Route path="/landing" element={<Landing />} />
           <Route path="/h2tcenter" element={<H2TC />} />
-          <Route path="/plant1" element={<Plant1 />} />
-          <Route path="/plant2" element={<Plant2 />} />
+          <Route path="/techC" element={<TechC />} />
           <Route path="/micro" element={<Micro />} />
           <Route path="/dominion" element={<Dominion />} />
           <Route path="/vng" element={<VNG />} />

@@ -118,7 +118,7 @@ const H2TC = () => {
   );
 };
 
-const Plant1 = () => {
+const TechC = () => {
   return (
     <div
       style={{
@@ -131,26 +131,6 @@ const Plant1 = () => {
     >
       <p  style={{padding: 20}}>Hydrogen Production Plant<br/>
         The Landing at Virginia Beach - 203 Red Horse Dr, Virginia Beach, VA
-      </p>
-
-      <a href='/h2tc'><button >Back</button></a>
-    </div>
-  );
-};
-
-const Plant2 = () => {
-  return (
-    <div
-      style={{
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100%",
-        width: "100%",
-        textAlign: "center",
-      }}
-    >
-      <p  style={{padding: 20}}>Hydrogen Production Plant<br/>
-        Newport News Tech Center - 700 Tech Center Parkway, Newport News, VA
       </p>
 
       <a href='/h2tc'><button >Back</button></a>
@@ -412,6 +392,6 @@ const VNG = () => {
 //   );
 // };
   
-export {Screen, Turbine, Genplant, Siemens, Politicians, Landing, H2TC, Plant1, Plant2, Micro, Dominion, VNG};
+export {Screen, Turbine, Genplant, Siemens, Politicians, Landing, H2TC, TechC, Micro, Dominion, VNG};
 //   User1, User2, User3, User4, User5, User6, User7, User8, User9, User10
 // };
