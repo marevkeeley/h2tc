@@ -2,12 +2,11 @@ import './App.css';
 import { Link } from "react-router-dom";
 import { GiWindTurbine } from "react-icons/gi";
 import { GiFactory } from "react-icons/gi";
+import { FaCarBattery } from "react-icons/fa";
 import map from "./map.png";
 import smallmap from "./smallmap.png";
 import {GiFamilyHouse} from "react-icons/gi";
-import {FaCarBattery} from 'react-icons/fa';
 import Popup from 'reactjs-popup';
-// import 'reactjs-popup/dist/index.css';
 
   const icon = {
     textAlign: 'center', 
@@ -74,7 +73,7 @@ const Home = () =>{
                       <img src={smallmap} style={{scale: '80%', position: 'relative', top: -60}} alt='Map of Hampton Roads'/>
                       <button style={{top: '3%', left: '84%', position: 'absolute'}}onClick={() => {close()}}>Close</button>
                       <Link to="/turbine" style={Object.assign({left: '78%', top: '64%'}, icon2)}><GiWindTurbine /></Link>
-                      <Link to="/landing" style={Object.assign({left: '76%', top: '64%'}, icon2)}><GiFactory /></Link>
+                      <Link to="/landing" style={Object.assign({left: '76%', top: '64%'}, icon2)}><FaCarBattery /></Link>
                       <Link to="/h2tcenter" style={Object.assign({left: '33%', top: '28%'}, icon2)}><GiFamilyHouse /></Link>
                       <Link to="/techC" style={Object.assign({left: '35%', top: '28%'}, icon2)}><GiFactory /></Link>
                       <Link to="/micro" style={Object.assign({left: '31%', top: '28%'}, icon2)}><GiFactory /></Link>

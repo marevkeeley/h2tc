@@ -1,4 +1,12 @@
 import React from "react";
+import landing from './landing.png';
+import dominion from './dominion.png';
+import h2tc from './h2tc.png';
+import h2tc2 from './h2tc2.png';
+import micro from './micro.png';
+import offshore from './offshore.png';
+import vng from './vng.png';
+import siemens from './siemens.png'
   
 const Screen = () => {
   return (
@@ -20,6 +28,7 @@ const Turbine = () => {
         textAlign: "center",
       }}
     >
+      <img src={offshore} style={{margin: -100, scale: '50%'}} alt='turbine'></img>
       <p  style={{padding: 20}}>Offshore wind out in the Atlantic Ocean off the Shore of Virginia Beach</p>
       <a href='/h2tc'><button >Back</button></a>
     </div>
@@ -37,8 +46,11 @@ const Genplant = () => {
         textAlign: "center",
       }}
     >
-      <p  style={{padding: 20}}>Details coming soon</p>
-      <a href='/h2tc'><button >Back</button></a>
+      <div style={{padding: 20}}>
+        <a href="https://genplant.com/ " style={{padding: 20}}>Genplant</a><br/>
+        <p>More details coming soon</p>
+        <a href='/h2tc'><button >Back</button></a>
+      </div>
     </div>
   );
 };
@@ -54,7 +66,10 @@ const Siemens = () => {
         textAlign: "center",
       }}
     >
-      <p  style={{padding: 20}}>This list will grow as we understand the players better. These players will be inside of the minigrids and hydrogen electrolysis plants.</p>
+      <img style={{scale: '50%', margin: -100}}src={siemens} alt='Siemens'></img>
+      <p>
+        <a href='https://fuelcellsworks.com/news/siemens-energy-and-intermountain-power-agency-drive-transition-to-sustainable-energy-through-study-of-hydrogen-energy-storage-at-a-utility-scale-power-plant-in-utah/ '>Siemens</a><br/>
+        This list will grow as we understand the players better. These players will be inside of the minigrids and hydrogen electrolysis plants.</p>
       <a href='/h2tc'><button >Back</button></a>
     </div>
   );
@@ -72,8 +87,8 @@ const Politicians = () => {
       }}
     >
       <p  style={{padding: 20}}>
-        Governor in Virginia<br/>
-        Senators in DC
+        <a href= "https://www.governor.virginia.gov/">Governor in Virginia</a><br/>
+        <a href="https://www.senate.gov/states/VA/intro.htm ">Senators in DC</a>
       </p>
       <a href='/h2tc'><button >Back</button></a>
     </div>
@@ -91,10 +106,12 @@ const Landing = () => {
         textAlign: "center",
       }}
     >
+      <img src={landing} style={{margin: -100, scale: '50%'}} alt='landing'></img>
       <p  style={{padding: 20}}>The Landing - Virginia Beach - 203 Red Horse Dr, Virginia Beach, VA<br/>
         This is where the electricity will come in from the offshore wind and be stored in a battery bank.
       </p>
-
+      <a href='https://www.azocleantech.com/article.aspx?ArticleID=1257 '>Learn More</a><br/>
+      <div style={{padding: 10}} />
       <a href='/h2tc'><button >Back</button></a>
     </div>
   );
@@ -111,8 +128,8 @@ const H2TC = () => {
         textAlign: "center",
       }}
     >
+      <img src={h2tc} style={{scale: '50%', margin: -100}} alt='h2tc'></img>
       <p  style={{padding: 20}}>The H2TC - 700 Tech Center Parkway, Newport News VA</p>
-
       <a href='/h2tc'><button >Back</button></a>
     </div>
   );
@@ -129,10 +146,12 @@ const TechC = () => {
         textAlign: "center",
       }}
     >
+      <img src={h2tc2} style={{scale: '50%', margin: -150}} alt='h2tc2'></img>
       <p  style={{padding: 20}}>Hydrogen Production Plant<br/>
         The Landing at Virginia Beach - 203 Red Horse Dr, Virginia Beach, VA
       </p>
-
+      <a href='http://innovateattechcenterva.com/plans-pricing/ '>Lean More</a><br/>
+      <div style={{padding: 10}}/>
       <a href='/h2tc'><button >Back</button></a>
     </div>
   );
@@ -149,8 +168,8 @@ const Micro = () => {
         textAlign: "center",
       }}
     >
+      <img src={micro} style={{scale: '50%', margin: -100}} alt='microgrid'></img>
       <p  style={{padding: 20}}>Microgrid - 700 Tech Center Parkway, Newport News VA</p>
-
       <a href='/h2tc'><button >Back</button></a>
     </div>
   );
@@ -167,8 +186,10 @@ const Dominion = () => {
         textAlign: "center",
       }}
     >
+      <img src={dominion} style={{scale: '50%', margin: -100}} alt='dominion'></img>
       <p  style={{padding: 20}}>Dominion Power - 551 Industrial Park, Dr., Newport News, VA</p>
-
+      <a href='https://wjla.com/news/local/dominion-energy-is-planning-to-build-the-largest-offshore-wind-project-heres-how '>Learn More</a>
+      <div style={{padding: 10}}/>
       <a href='/h2tc'><button >Back</button></a>
     </div>
   );
@@ -185,8 +206,10 @@ const VNG = () => {
         textAlign: "center",
       }}
     >
+      <img src={vng} style={{scale: '50%', margin: -100}} alt='Virginia Natural Gas'></img>
       <p  style={{padding: 20}}>Virginia Natural Gas - 746 Diligence Dr., Newport News, VA</p>
-
+      <a href='https://www.wavy.com/news/local-news/norfolk/whats-that-smell-strange-odor-across-parts-of-norfolk-leaves-officials-scratching-their-heads/ '>Learn More</a>
+      <div style={{padding: 10}}/>
       <a href='/h2tc'><button >Back</button></a>
     </div>
   );
