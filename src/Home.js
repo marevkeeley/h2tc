@@ -1,13 +1,13 @@
 import './App.css';
+import map from "./map.png";
 import { Link } from "react-router-dom";
 import { GiWindTurbine } from "react-icons/gi";
 import { GiFactory } from "react-icons/gi";
 import { FaCarBattery } from "react-icons/fa";
-import map from "./map.png";
-import smallmap from "./smallmap.png";
 import {GiFamilyHouse} from "react-icons/gi";
-import Popup from 'reactjs-popup';
-
+import {BsFillHouseFill} from "react-icons/bs";
+import {useState} from 'react';
+  
   const icon = {
     textAlign: 'center', 
     position: 'absolute', 
@@ -27,65 +27,89 @@ import Popup from 'reactjs-popup';
     padding: 5, 
     textAlign: 'center', 
     position: 'absolute', 
-    fontSize: 20,
+    fontSize: 16,
     underlined: 'false',
     textDecoration: 'none',
+    color: '#0047AB',
   };
 
+  const text = {
+    textAlign: 'center', 
+    position: 'absolute', 
+    fontSize: 16,
+    color: '#0047AB',
+  };
+   
 const Home = () =>{
+  const [user, setUser] = useState(false)
+
+  const filter = () => {
+    if (user === false) {
+      setUser(true)
+    }
+    else {
+      setUser(false)
+    }
+  }
+
     return (
       <div style={{
         backgroundImage: `url(${map})`,
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        backgroundSize: '95%',
+        backgroundPosition: 'left',
+        backgroundSize: '85%',
       }}>
         <body className="App-header">
-          <GiWindTurbine style={Object.assign({left: '88%', top: '78%'}, icon)} />
-          <FaCarBattery style={Object.assign({left: '86%', top: '78%'}, icon)} />
-          <GiFamilyHouse style={Object.assign({left: '82%', top: '70%'}, icon)} />
-          <GiFactory style={Object.assign({left: '86%', top: '76%'}, icon)} />
-          <GiFactory style={Object.assign({left: '83%', top: '70%'}, icon)} />
-          <GiFactory style={Object.assign({left: '81%', top: '70%'}, icon)} />
-          <GiFactory style={Object.assign({left: '80%', top: '69%'}, icon)} />
-          <GiFactory style={Object.assign({left: '83%', top: '72%'}, icon)} />
-          {/* <Link to="/turbine" style={icon}><GiWindTurbine /></Link>
-          <Link to="/landing" style={icon1}><FaCarBattery /></Link>
-          <Link to="/h2tcenter" style={icon2}><GiFamilyHouse /></Link>
-          <Link to="/plant1" style={icon3}><GiFactory /></Link>
-          <Link to="/plant2" style={icon4}><GiFactory /></Link>
-          <Link to="/micro" style={icon5}><BsBuildings /></Link>
-          <Link to="/dominion" style={icon6}><BsBuildings /></Link>
-          <Link to="/vng" style={icon7}><BsBuildings /></Link> */}
-          <Popup 
-          trigger=
-            {<button style={{
-              position: 'absolute', 
-              top: '65%', 
-              left:'80%', 
-              padding: 60,
-              backgroundColor: 'transparent',
-            }}></button>}
-              modal nested>
-                {
-                  close => (
-                    <div>
-                      <img src={smallmap} style={{scale: '80%', position: 'relative', top: -60}} alt='Map of Hampton Roads'/>
-                      <button style={{top: '3%', left: '84%', position: 'absolute'}}onClick={() => {close()}}>Close</button>
-                      <Link to="/turbine" style={Object.assign({left: '78%', top: '64%'}, icon2)}><GiWindTurbine /></Link>
-                      <Link to="/landing" style={Object.assign({left: '76%', top: '64%'}, icon2)}><FaCarBattery /></Link>
-                      <Link to="/h2tcenter" style={Object.assign({left: '33%', top: '28%'}, icon2)}><GiFamilyHouse /></Link>
-                      <Link to="/techC" style={Object.assign({left: '35%', top: '28%'}, icon2)}><GiFactory /></Link>
-                      <Link to="/micro" style={Object.assign({left: '31%', top: '28%'}, icon2)}><GiFactory /></Link>
-                      <Link to="/dominion" style={Object.assign({left: '33%', top: '22%'}, icon2)}><GiFactory /></Link>
-                      <Link to="/vng" style={Object.assign({left: '37%', top: '33%'}, icon2)}><GiFactory /></Link>
-                    </div>
-                  )
-              }
-            </Popup>
-          <Link to="/genplant" style={Object.assign({left: '28%', top: '90%'}, link)}>Genplant</Link>
-          <Link to="/siemens" style={Object.assign({left: '45%', top: '90%'}, link)}>Siemens</Link>
-          <Link to="/politicians" style={Object.assign({left: '62%', top: '90%'}, link)}>Politicians</Link>
+          <div style={Object.assign({left: '86%', top: '2%'}, text)}>
+            <p style={{fontWeight: 'bold'}}>Key</p>
+          </div>
+          <GiWindTurbine style={Object.assign({left: '86%', top: '10%'}, icon)} />
+          <div style={Object.assign({left: '89%', top: '8%'}, text)}>
+            <p>Turbine</p>
+          </div>
+          <FaCarBattery style={Object.assign({left: '86%', top: '15%'}, icon)} />
+          <div style={Object.assign({left: '89%', top: '13%'}, text)}>
+            <p>Electricity Storage</p>
+          </div>
+          <GiFamilyHouse style={Object.assign({left: '86%', top: '20%'}, icon)} />
+          <div style={Object.assign({left: '89%', top: '18%'}, text)}>
+            <p>H2 Tech Center</p>
+          </div>
+          <GiFactory style={Object.assign({left: '86%', top: '25%'}, icon)} />
+          <div style={Object.assign({left: '89%', top: '23%'}, text)}>
+            <p>Production Plant</p>
+          </div>
+          <BsFillHouseFill style={Object.assign({left: '86%', top: '30%'}, icon)} />
+          <div style={Object.assign({left: '89%', top: '28%'}, text)}>
+            <p>Potential User</p>
+          </div>
+          <div onClick={() => filter()} style={Object.assign({left: '86%', top: '40%', border: '2px solid #0047AB', padding: 8}, text)}>
+            <text>
+            Filter users
+            </text>
+          </div>
+          <Link to="/turbine" style={Object.assign({left: '68%', top: '80%'}, icon2)}><GiWindTurbine /></Link>
+          <Link to="/landing" style={Object.assign({left: '65%', top: '80%'}, icon2)}><FaCarBattery /></Link>
+          <Link to="/h2tcenter" style={Object.assign({left: '31%', top: '31%'}, icon2)}><GiFamilyHouse /></Link>
+          <Link to="/techC" style={Object.assign({left: '33%', top: '31%'}, icon2)}><GiFactory /></Link>
+          <Link to="/micro" style={Object.assign({left: '29%', top: '31%'}, icon2)}><GiFactory /></Link>
+          <Link to="/dominion" style={Object.assign({left: '28%', top: '24%'}, icon2)}><GiFactory /></Link>
+          <Link to="/vng" style={Object.assign({left: '33%', top: '34%'}, icon2)}><GiFactory /></Link>
+          <Link to="/genplant" style={Object.assign({left: '86%', top: '80%'}, link)}>Genplant</Link>
+          <Link to="/siemens" style={Object.assign({left: '86%', top: '85%'}, link)}>Siemens</Link>
+          <Link to="/politicians" style={Object.assign({left: '86%', top: '90%'}, link)}>Politicians</Link>
+          {user && <div>
+            <Link to="/port" style={Object.assign({left: '45%', top: '80%'}, icon2)}><BsFillHouseFill /></Link>
+            <Link to="/canon" style={Object.assign({left: '31%', top: '26%'}, icon2)}><BsFillHouseFill /></Link>
+            <Link to="/newportcity" style={Object.assign({top: '50%', left: '36%'}, icon2)}><BsFillHouseFill /></Link>
+            <Link to="/langley" style={Object.assign({left: '40%', top: '32%'}, icon2)}><BsFillHouseFill /></Link>
+            <Link to="/norfolknaval" style={Object.assign({left: '43%', top: '60%'}, icon2)}><BsFillHouseFill /></Link>
+            <Link to="/smithfield" style={Object.assign({left: '22%', top: '50%'}, icon2)}><BsFillHouseFill /></Link>
+            <Link to="/hpdata" style={Object.assign({left: '31%', top: '38%'}, icon2)}><BsFillHouseFill /></Link>
+            <Link to="/jefferson" style={Object.assign({left: '34%', top: '38%'}, icon2)}><BsFillHouseFill /></Link>
+            <Link to="/eustis" style={Object.assign({left: '25%', top: '26%'}, icon2)}><BsFillHouseFill /></Link>
+            <Link to="/nasa" style={Object.assign({left: '42%', top: '32%'}, icon2)}><BsFillHouseFill /></Link>
+          </div>}
         </body>
       </div>
     );

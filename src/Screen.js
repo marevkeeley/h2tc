@@ -6,7 +6,8 @@ import h2tc2 from './h2tc2.png';
 import micro from './micro.png';
 import offshore from './offshore.png';
 import vng from './vng.png';
-import siemens from './siemens.png'
+import siemens from './siemens.png';
+import canon from './canon.png';
   
 const Screen = () => {
   return (
@@ -215,206 +216,182 @@ const VNG = () => {
   );
 };
 
-// const User1 = () => {
-//   return (
-//     <div
-//       style={{
-//         alignItems: "center",
-//         justifyContent: "center",
-//         height: "100%",
-//         width: "100%",
-//         textAlign: "center",
-//       }}
-//     >
-//       <p  style={{padding: 20}}>Potential User<br/>
-//         The Port of Virginia - 600 World Trade Center, Norfolk, VA
-// </p>
+const User1 = () => {
+  return (
+    <div
+      style={{
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100%",
+        width: "100%",
+        textAlign: "center",
+      }}
+    >
+      <img src={offshore} style={{scale: '50%', margin: -100}} alt='Port of Virginia'></img>
+      <p  style={{padding: 20}}>The Port of Virginia - 600 World Trade Center, Norfolk, VA</p>
+      <a href="https://www.virginiabusiness.com/article/port-of-virginia/ ">Learn more</a>
+      <div style={{padding: 10}}/>
+      <a href='/h2tc'><button >Back</button></a>
+    </div>
+  );
+};
 
-//       <a href='/'><button >Back</button></a>
-//     </div>
-//   );
-// };
+const User2 = () => {
+  return (
+    <div
+      style={{
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100%",
+        width: "100%",
+        textAlign: "center",
+      }}
+    >
+      <img src={canon} style={{scale: '50%', margin: -100}} alt='Port of Virginia'></img>
+      <p  style={{padding: 20}}> Canon - 12000 Canon Blvd, Newport News, VA</p>
+      <a href="https://www.cvi.canon.com/internet/portal/cvi/home/aboutus">Learn more</a>
+      <div style={{padding: 10}}/>
+      <a href='/h2tc'><button >Back</button></a>
+    </div>
+  );
+};
 
-// const User2 = () => {
-//   return (
-//     <div
-//       style={{
-//         alignItems: "center",
-//         justifyContent: "center",
-//         height: "100%",
-//         width: "100%",
-//         textAlign: "center",
-//       }}
-//     >
-//       <p  style={{padding: 20}}>Potential User<br/>
-//         Canon - 12000 Canon Blvd, Newport News, VA
-// </p>
+const User3 = () => {
+  return (
+    <div
+      style={{
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100%",
+        width: "100%",
+        textAlign: "center",
+      }}
+    >
+      <p  style={{padding: 20}}>City of Newport News - 2400 Washington Ave, Newport News, VA</p>
+      <a href='/h2tc'><button >Back</button></a>
+    </div>
+  );
+};
 
-//       <a href='/'><button >Back</button></a>
-//     </div>
-//   );
-// };
+const User4 = () => {
+  return (
+    <div
+      style={{
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100%",
+        width: "100%",
+        textAlign: "center",
+      }}
+    >
+      <p  style={{padding: 20}}>Langley Air Force Base - 210 Sweeney Blvd, Hampton, VA</p>
+      <a href='/h2tc'><button >Back</button></a>
+    </div>
+  );
+};
 
-// const User3 = () => {
-//   return (
-//     <div
-//       style={{
-//         alignItems: "center",
-//         justifyContent: "center",
-//         height: "100%",
-//         width: "100%",
-//         textAlign: "center",
-//       }}
-//     >
-//       <p  style={{padding: 20}}>Potential User<br/>
-//         City of Newport News - 2400 Washington Ave, Newport News, VA
-// </p>
+const User5 = () => {
+  return (
+    <div
+      style={{
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100%",
+        width: "100%",
+        textAlign: "center",
+      }}
+    >
+      <p  style={{padding: 20}}>Norfolk Naval Base - 1530 Gilbert St, Norfolk, VA</p>
+      <a href='/h2tc'><button >Back</button></a>
+    </div>
+  );
+};
 
-//       <a href='/'><button >Back</button></a>
-//     </div>
-//   );
-// };
+const User6 = () => {
+  return (
+    <div
+      style={{
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100%",
+        width: "100%",
+        textAlign: "center",
+      }}
+    >
+      <p  style={{padding: 20}}>Smithfield - 200 Commerce St. Smithfield, VA</p>
+      <a href='/h2tc'><button >Back</button></a>
+    </div>
+  );
+};
 
-// const User4 = () => {
-//   return (
-//     <div
-//       style={{
-//         alignItems: "center",
-//         justifyContent: "center",
-//         height: "100%",
-//         width: "100%",
-//         textAlign: "center",
-//       }}
-//     >
-//       <p  style={{padding: 20}}>Potential User<br/>
-//         Langley Air Force Base - 210 Sweeney Blvd, Hampton, VA
-// </p>
+const User7 = () => {
+  return (
+    <div
+      style={{
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100%",
+        width: "100%",
+        textAlign: "center",
+      }}
+    >
+      <p  style={{padding: 20}}>HP Data Center - Newport News not too far from the Tech Center</p>
+      <a href='/h2tc'><button >Back</button></a>
+    </div>
+  );
+};
 
-//       <a href='/'><button >Back</button></a>
-//     </div>
-//   );
-// };
+const User8 = () => {
+  return (
+    <div
+      style={{
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100%",
+        width: "100%",
+        textAlign: "center",
+      }}
+    >
+      <p  style={{padding: 20}}>Jefferson Labs - 12000 Jefferson Avenue, Newport News VA</p>
+      <a href='/h2tc'><button >Back</button></a>
+    </div>
+  );
+};
 
-// const User5 = () => {
-//   return (
-//     <div
-//       style={{
-//         alignItems: "center",
-//         justifyContent: "center",
-//         height: "100%",
-//         width: "100%",
-//         textAlign: "center",
-//       }}
-//     >
-//       <p  style={{padding: 20}}>Potential User<br/>
-//         Norfolk Naval Base - 1530 Gilbert St, Norfolk, VA
-// </p>
+const User9 = () => {
+  return (
+    <div
+      style={{
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100%",
+        width: "100%",
+        textAlign: "center",
+      }}
+    >
+      <p  style={{padding: 20}}>Fort Eustis - 650 Monroe Ave, Ft Eustis, VA</p>
+      <a href='/h2tc'><button >Back</button></a>
+    </div>
+  );
+};
 
-//       <a href='/'><button >Back</button></a>
-//     </div>
-//   );
-// };
-
-// const User6 = () => {
-//   return (
-//     <div
-//       style={{
-//         alignItems: "center",
-//         justifyContent: "center",
-//         height: "100%",
-//         width: "100%",
-//         textAlign: "center",
-//       }}
-//     >
-//       <p  style={{padding: 20}}>Potential User<br/>
-//         Smithfield - 200 Commerce St. Smithfield, VA
-// </p>
-
-//       <a href='/'><button >Back</button></a>
-//     </div>
-//   );
-// };
-
-// const User7 = () => {
-//   return (
-//     <div
-//       style={{
-//         alignItems: "center",
-//         justifyContent: "center",
-//         height: "100%",
-//         width: "100%",
-//         textAlign: "center",
-//       }}
-//     >
-//       <p  style={{padding: 20}}>Potential User<br/>
-//         HP Data Center - Just put it in Newport News not too far from the Tech Center
-// </p>
-
-//       <a href='/'><button >Back</button></a>
-//     </div>
-//   );
-// };
-
-// const User8 = () => {
-//   return (
-//     <div
-//       style={{
-//         alignItems: "center",
-//         justifyContent: "center",
-//         height: "100%",
-//         width: "100%",
-//         textAlign: "center",
-//       }}
-//     >
-//       <p  style={{padding: 20}}>Potential User<br/>
-//        Jefferson Labs - 12000 Jefferson Avenue, Newport News VA
-// </p>
-
-//       <a href='/'><button >Back</button></a>
-//     </div>
-//   );
-// };
-
-// const User9 = () => {
-//   return (
-//     <div
-//       style={{
-//         alignItems: "center",
-//         justifyContent: "center",
-//         height: "100%",
-//         width: "100%",
-//         textAlign: "center",
-//       }}
-//     >
-//       <p  style={{padding: 20}}>Potential User<br/>
-//         Fort Eustis - 650 Monroe Ave, Ft Eustis, VA
-// </p>
-
-//       <a href='/'><button >Back</button></a>
-//     </div>
-//   );
-// };
-
-// const User10 = () => {
-//   return (
-//     <div
-//       style={{
-//         alignItems: "center",
-//         justifyContent: "center",
-//         height: "100%",
-//         width: "100%",
-//         textAlign: "center",
-//       }}
-//     >
-//       <p  style={{padding: 20}}>Potential User<br/>
-//        NASA - 2 Langley Blvd, Hampton, VA
-// </p>
-
-//       <a href='/'><button >Back</button></a>
-//     </div>
-//   );
-// };
+const User10 = () => {
+  return (
+    <div
+      style={{
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100%",
+        width: "100%",
+        textAlign: "center",
+      }}
+    >
+      <p  style={{padding: 20}}>NASA - 2 Langley Blvd, Hampton, VA</p>
+      <a href='/h2tc'><button >Back</button></a>
+    </div>
+  );
+};
   
-export {Screen, Turbine, Genplant, Siemens, Politicians, Landing, H2TC, TechC, Micro, Dominion, VNG};
-//   User1, User2, User3, User4, User5, User6, User7, User8, User9, User10
-// };
+export {Screen, Turbine, Genplant, Siemens, Politicians, Landing, H2TC, TechC, Micro, Dominion, VNG,
+User1, User2, User3, User4, User5, User6, User7, User8, User9, User10
+};

@@ -6,21 +6,12 @@ import {
 } from "react-router-dom";
   
 import Home from "./Home";
-import {Screen, Turbine, Genplant, Siemens, Politicians, Landing, H2TC, TechC, Micro, Dominion, VNG} from "./Screen";
-// import User1 from "./Screen";
-// import User2 from "./Screen";
-// import User3 from "./Screen";
-// import User4 from "./Screen";
-// import User5 from "./Screen";
-// import User6 from "./Screen";
-// import User7 from "./Screen";
-// import User8 from "./Screen";
-// import User9 from "./Screen";
-// import User10 from "./Screen";
+import {Screen, Turbine, Genplant, Siemens, Politicians, Landing, H2TC, TechC, Micro, Dominion, VNG,
+User1, User2, User3, User4, User5, User6, User7, User8, User9, User10} from "./Screen";
   
 function App() {
   return (
-    <>
+    <div>
       <Router>
         <Routes>
           <Route path="/h2tc" element={<Home />} />
@@ -35,19 +26,19 @@ function App() {
           <Route path="/micro" element={<Micro />} />
           <Route path="/dominion" element={<Dominion />} />
           <Route path="/vng" element={<VNG />} />
-          {/* <Route path="/user1" element={<User1 />} />
-          <Route path="/user2" element={<User2 />} />
-          <Route path="/user3" element={<User3 />} />
-          <Route path="/user4" element={<User4 />} />
-          <Route path="/user5" element={<User5 />} />
-          <Route path="/user6" element={<User6 />} />
-          <Route path="/user7" element={<User7 />} />
-          <Route path="/user8" element={<User8 />} />
-          <Route path="/user9" element={<User9 />} />
-          <Route path="/user10" element={<User10 />} /> */}
+          <Route path="/port" element={<User1 />} />
+          <Route path="/canon" element={<User2 />} />
+          <Route path="/newportcity" element={<User3 />} />
+          <Route path="/langley" element={<User4 />} />
+          <Route path="/norfolknaval" element={<User5 />} />
+          <Route path="/smithfield" element={<User6 />} />
+          <Route path="/hpdata" element={<User7 />} />
+          <Route path="/jefferson" element={<User8 />} />
+          <Route path="/eustis" element={<User9 />} />
+          <Route path="/nasa" element={<User10 />} />
         </Routes>
       </Router>
-    </>
+    </div>
   );
 }
   
