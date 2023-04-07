@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/h2tc/static/css/main.437dbe2f.css",
-    "main.js": "/h2tc/static/js/main.84977ff7.js",
+    "main.js": "/h2tc/static/js/main.11cb9b01.js",
     "static/js/787.2dd578d1.chunk.js": "/h2tc/static/js/787.2dd578d1.chunk.js",
     "static/media/offshore.png": "/h2tc/static/media/offshore.3ec5a40e09f19b24bdf6.png",
     "static/media/h2tc2.png": "/h2tc/static/media/h2tc2.6198b0a9de4df11d92d9.png",
     "static/media/h2tc.png": "/h2tc/static/media/h2tc.31fb5c44af06b224d1dd.png",
-    "static/media/smallmap.png": "/h2tc/static/media/smallmap.a39fc23735c6e4212788.png",
     "static/media/micro.png": "/h2tc/static/media/micro.17e272be007fbb3a3a51.png",
+    "static/media/canon.png": "/h2tc/static/media/canon.b1a0adecd667231e5d68.png",
     "static/media/vng.png": "/h2tc/static/media/vng.6599d3a6dd068eeaddf2.png",
     "static/media/dominion.png": "/h2tc/static/media/dominion.334bc7671c70e42e68f1.png",
     "static/media/landing.png": "/h2tc/static/media/landing.45be27addfdd415aa0cd.png",
-    "static/media/map.png": "/h2tc/static/media/map.3a8e5277ba83193089df.png",
+    "static/media/map.png": "/h2tc/static/media/map.6c48867800456625ed24.png",
     "static/media/siemens.png": "/h2tc/static/media/siemens.99a677f9673f538c40e9.png",
     "index.html": "/h2tc/index.html",
     "main.437dbe2f.css.map": "/h2tc/static/css/main.437dbe2f.css.map",
-    "main.84977ff7.js.map": "/h2tc/static/js/main.84977ff7.js.map",
+    "main.11cb9b01.js.map": "/h2tc/static/js/main.11cb9b01.js.map",
     "787.2dd578d1.chunk.js.map": "/h2tc/static/js/787.2dd578d1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.437dbe2f.css",
-    "static/js/main.84977ff7.js"
+    "static/js/main.11cb9b01.js"
   ]
 }
