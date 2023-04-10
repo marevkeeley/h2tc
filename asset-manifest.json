@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.437dbe2f.css",
-    "main.js": "/static/js/main.b4f30831.js",
+    "main.js": "/static/js/main.6ef3463c.js",
     "static/js/787.2dd578d1.chunk.js": "/static/js/787.2dd578d1.chunk.js",
     "static/media/offshore.png": "/static/media/offshore.3ec5a40e09f19b24bdf6.png",
     "static/media/h2tc2.png": "/static/media/h2tc2.6198b0a9de4df11d92d9.png",
@@ -15,11 +15,11 @@
     "static/media/siemens.png": "/static/media/siemens.99a677f9673f538c40e9.png",
     "index.html": "/index.html",
     "main.437dbe2f.css.map": "/static/css/main.437dbe2f.css.map",
-    "main.b4f30831.js.map": "/static/js/main.b4f30831.js.map",
+    "main.6ef3463c.js.map": "/static/js/main.6ef3463c.js.map",
     "787.2dd578d1.chunk.js.map": "/static/js/787.2dd578d1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.437dbe2f.css",
-    "static/js/main.b4f30831.js"
+    "static/js/main.6ef3463c.js"
   ]
 }
