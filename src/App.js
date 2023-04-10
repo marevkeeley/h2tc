@@ -14,7 +14,7 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route path="/h2tc" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/Screen" element={<Screen />} />
           <Route path="/turbine" element={<Turbine />} />
           <Route path="/genplant" element={<Genplant />} />
