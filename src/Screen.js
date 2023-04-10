@@ -31,7 +31,7 @@ const Turbine = () => {
     >
       <img src={offshore} style={{margin: -100, scale: '50%'}} alt='turbine'></img>
       <p  style={{padding: 20}}>Offshore wind out in the Atlantic Ocean off the Shore of Virginia Beach</p>
-      <a href='/h2tc'><button >Back</button></a>
+      <a href='/'><button >Back</button></a>
     </div>
   );
 };
@@ -50,7 +50,7 @@ const Genplant = () => {
       <div style={{padding: 20}}>
         <a href="https://genplant.com/ " style={{padding: 20}}>Genplant</a><br/>
         <p>More details coming soon</p>
-        <a href='/h2tc'><button >Back</button></a>
+        <a href='/'><button >Back</button></a>
       </div>
     </div>
   );
@@ -71,7 +71,7 @@ const Siemens = () => {
       <p>
         <a href='https://fuelcellsworks.com/news/siemens-energy-and-intermountain-power-agency-drive-transition-to-sustainable-energy-through-study-of-hydrogen-energy-storage-at-a-utility-scale-power-plant-in-utah/ '>Siemens</a><br/>
         This list will grow as we understand the players better. These players will be inside of the minigrids and hydrogen electrolysis plants.</p>
-      <a href='/h2tc'><button >Back</button></a>
+      <a href='/'><button >Back</button></a>
     </div>
   );
 };
@@ -91,7 +91,7 @@ const Politicians = () => {
         <a href= "https://www.governor.virginia.gov/">Governor in Virginia</a><br/>
         <a href="https://www.senate.gov/states/VA/intro.htm ">Senators in DC</a>
       </p>
-      <a href='/h2tc'><button >Back</button></a>
+      <a href='/'><button >Back</button></a>
     </div>
   );
 };
@@ -113,7 +113,7 @@ const Landing = () => {
       </p>
       <a href='https://www.azocleantech.com/article.aspx?ArticleID=1257 '>Learn More</a><br/>
       <div style={{padding: 10}} />
-      <a href='/h2tc'><button >Back</button></a>
+      <a href='/'><button >Back</button></a>
     </div>
   );
 };
@@ -131,7 +131,7 @@ const H2TC = () => {
     >
       <img src={h2tc} style={{scale: '50%', margin: -100}} alt='h2tc'></img>
       <p  style={{padding: 20}}>The H2TC - 700 Tech Center Parkway, Newport News VA</p>
-      <a href='/h2tc'><button >Back</button></a>
+      <a href='/'><button >Back</button></a>
     </div>
   );
 };
@@ -153,7 +153,7 @@ const TechC = () => {
       </p>
       <a href='http://innovateattechcenterva.com/plans-pricing/ '>Lean More</a><br/>
       <div style={{padding: 10}}/>
-      <a href='/h2tc'><button >Back</button></a>
+      <a href='/'><button >Back</button></a>
     </div>
   );
 };
@@ -171,7 +171,7 @@ const Micro = () => {
     >
       <img src={micro} style={{scale: '50%', margin: -100}} alt='microgrid'></img>
       <p  style={{padding: 20}}>Microgrid - 700 Tech Center Parkway, Newport News VA</p>
-      <a href='/h2tc'><button >Back</button></a>
+      <a href='/'><button >Back</button></a>
     </div>
   );
 };
@@ -191,7 +191,7 @@ const Dominion = () => {
       <p  style={{padding: 20}}>Dominion Power - 551 Industrial Park, Dr., Newport News, VA</p>
       <a href='https://wjla.com/news/local/dominion-energy-is-planning-to-build-the-largest-offshore-wind-project-heres-how '>Learn More</a>
       <div style={{padding: 10}}/>
-      <a href='/h2tc'><button >Back</button></a>
+      <a href='/'><button >Back</button></a>
     </div>
   );
 };
@@ -211,7 +211,7 @@ const VNG = () => {
       <p  style={{padding: 20}}>Virginia Natural Gas - 746 Diligence Dr., Newport News, VA</p>
       <a href='https://www.wavy.com/news/local-news/norfolk/whats-that-smell-strange-odor-across-parts-of-norfolk-leaves-officials-scratching-their-heads/ '>Learn More</a>
       <div style={{padding: 10}}/>
-      <a href='/h2tc'><button >Back</button></a>
+      <a href='/'><button >Back</button></a>
     </div>
   );
 };
@@ -231,7 +231,7 @@ const User1 = () => {
       <p  style={{padding: 20}}>The Port of Virginia - 600 World Trade Center, Norfolk, VA</p>
       <a href="https://www.virginiabusiness.com/article/port-of-virginia/ ">Learn more</a>
       <div style={{padding: 10}}/>
-      <a href='/h2tc'><button >Back</button></a>
+      <a href='/'><button >Back</button></a>
     </div>
   );
 };
@@ -251,7 +251,7 @@ const User2 = () => {
       <p  style={{padding: 20}}> Canon - 12000 Canon Blvd, Newport News, VA</p>
       <a href="https://www.cvi.canon.com/internet/portal/cvi/home/aboutus">Learn more</a>
       <div style={{padding: 10}}/>
-      <a href='/h2tc'><button >Back</button></a>
+      <a href='/'><button >Back</button></a>
     </div>
   );
 };
@@ -268,7 +268,7 @@ const User3 = () => {
       }}
     >
       <p  style={{padding: 20}}>City of Newport News - 2400 Washington Ave, Newport News, VA</p>
-      <a href='/h2tc'><button >Back</button></a>
+      <a href='/'><button >Back</button></a>
     </div>
   );
 };
@@ -285,7 +285,7 @@ const User4 = () => {
       }}
     >
       <p  style={{padding: 20}}>Langley Air Force Base - 210 Sweeney Blvd, Hampton, VA</p>
-      <a href='/h2tc'><button >Back</button></a>
+      <a href='/'><button >Back</button></a>
     </div>
   );
 };
@@ -302,7 +302,7 @@ const User5 = () => {
       }}
     >
       <p  style={{padding: 20}}>Norfolk Naval Base - 1530 Gilbert St, Norfolk, VA</p>
-      <a href='/h2tc'><button >Back</button></a>
+      <a href='/'><button >Back</button></a>
     </div>
   );
 };
@@ -319,7 +319,7 @@ const User6 = () => {
       }}
     >
       <p  style={{padding: 20}}>Smithfield - 200 Commerce St. Smithfield, VA</p>
-      <a href='/h2tc'><button >Back</button></a>
+      <a href='/'><button >Back</button></a>
     </div>
   );
 };
@@ -336,7 +336,7 @@ const User7 = () => {
       }}
     >
       <p  style={{padding: 20}}>HP Data Center - Newport News not too far from the Tech Center</p>
-      <a href='/h2tc'><button >Back</button></a>
+      <a href='/'><button >Back</button></a>
     </div>
   );
 };
@@ -353,7 +353,7 @@ const User8 = () => {
       }}
     >
       <p  style={{padding: 20}}>Jefferson Labs - 12000 Jefferson Avenue, Newport News VA</p>
-      <a href='/h2tc'><button >Back</button></a>
+      <a href='/'><button >Back</button></a>
     </div>
   );
 };
@@ -370,7 +370,7 @@ const User9 = () => {
       }}
     >
       <p  style={{padding: 20}}>Fort Eustis - 650 Monroe Ave, Ft Eustis, VA</p>
-      <a href='/h2tc'><button >Back</button></a>
+      <a href='/'><button >Back</button></a>
     </div>
   );
 };
@@ -387,7 +387,7 @@ const User10 = () => {
       }}
     >
       <p  style={{padding: 20}}>NASA - 2 Langley Blvd, Hampton, VA</p>
-      <a href='/h2tc'><button >Back</button></a>
+      <a href='/'><button >Back</button></a>
     </div>
   );
 };
