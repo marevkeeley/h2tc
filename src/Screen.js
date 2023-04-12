@@ -8,7 +8,8 @@ import offshore from './offshore.png';
 import vng from './vng.png';
 import siemens from './siemens.png';
 import canon from './canon.png';
-  
+import {useNavigate} from 'react-router-dom';
+
 const Screen = () => {
   return (
     <div>
@@ -19,6 +20,11 @@ const Screen = () => {
 
 
 const Turbine = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -31,12 +37,17 @@ const Turbine = () => {
     >
       <img src={offshore} style={{margin: -100, scale: '50%'}} alt='turbine'></img>
       <p  style={{padding: 20}}>Offshore wind out in the Atlantic Ocean off the Shore of Virginia Beach</p>
-      <a href='/'><button >Back</button></a>
+      <button onClick={goBack}>Back</button>
     </div>
   );
 };
 
 const Genplant = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -50,13 +61,18 @@ const Genplant = () => {
       <div style={{padding: 20}}>
         <a href="https://genplant.com/ " style={{padding: 20}}>Genplant</a><br/>
         <p>More details coming soon</p>
-        <a href='/'><button >Back</button></a>
+        <button onClick={goBack}>Back</button>
       </div>
     </div>
   );
 };
 
 const Siemens = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -70,13 +86,19 @@ const Siemens = () => {
       <img style={{scale: '50%', margin: -100}}src={siemens} alt='Siemens'></img>
       <p>
         <a href='https://fuelcellsworks.com/news/siemens-energy-and-intermountain-power-agency-drive-transition-to-sustainable-energy-through-study-of-hydrogen-energy-storage-at-a-utility-scale-power-plant-in-utah/ '>Siemens</a><br/>
-        This list will grow as we understand the players better. These players will be inside of the minigrids and hydrogen electrolysis plants.</p>
-      <a href='/'><button >Back</button></a>
+        This list will grow as we understand the players better. These players will be inside of the minigrids and hydrogen electrolysis plants.
+        </p>
+      <button onClick={goBack}>Back</button>
     </div>
   );
 };
 
 const Politicians = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -91,12 +113,17 @@ const Politicians = () => {
         <a href= "https://www.governor.virginia.gov/">Governor in Virginia</a><br/>
         <a href="https://www.senate.gov/states/VA/intro.htm ">Senators in DC</a>
       </p>
-      <a href='/'><button >Back</button></a>
+      <button onClick={goBack}>Back</button>
     </div>
   );
 };
 
 const Landing = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -113,12 +140,17 @@ const Landing = () => {
       </p>
       <a href='https://www.azocleantech.com/article.aspx?ArticleID=1257 '>Learn More</a><br/>
       <div style={{padding: 10}} />
-      <a href='/'><button >Back</button></a>
+      <button onClick={goBack}>Back</button>
     </div>
   );
 };
 
 const H2TC = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -131,12 +163,17 @@ const H2TC = () => {
     >
       <img src={h2tc} style={{scale: '50%', margin: -100}} alt='h2tc'></img>
       <p  style={{padding: 20}}>The H2TC - 700 Tech Center Parkway, Newport News VA</p>
-      <a href='/'><button >Back</button></a>
+      <button onClick={goBack}>Back</button>
     </div>
   );
 };
 
 const TechC = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -153,12 +190,17 @@ const TechC = () => {
       </p>
       <a href='http://innovateattechcenterva.com/plans-pricing/ '>Lean More</a><br/>
       <div style={{padding: 10}}/>
-      <a href='/'><button >Back</button></a>
+      <button onClick={goBack}>Back</button>
     </div>
   );
 };
 
 const Micro = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -171,12 +213,17 @@ const Micro = () => {
     >
       <img src={micro} style={{scale: '50%', margin: -100}} alt='microgrid'></img>
       <p  style={{padding: 20}}>Microgrid - 700 Tech Center Parkway, Newport News VA</p>
-      <a href='/'><button >Back</button></a>
+      <button onClick={goBack}>Back</button>
     </div>
   );
 };
 
 const Dominion = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -191,12 +238,17 @@ const Dominion = () => {
       <p  style={{padding: 20}}>Dominion Power - 551 Industrial Park, Dr., Newport News, VA</p>
       <a href='https://wjla.com/news/local/dominion-energy-is-planning-to-build-the-largest-offshore-wind-project-heres-how '>Learn More</a>
       <div style={{padding: 10}}/>
-      <a href='/'><button >Back</button></a>
+      <button onClick={goBack}>Back</button>
     </div>
   );
 };
 
 const VNG = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -211,12 +263,17 @@ const VNG = () => {
       <p  style={{padding: 20}}>Virginia Natural Gas - 746 Diligence Dr., Newport News, VA</p>
       <a href='https://www.wavy.com/news/local-news/norfolk/whats-that-smell-strange-odor-across-parts-of-norfolk-leaves-officials-scratching-their-heads/ '>Learn More</a>
       <div style={{padding: 10}}/>
-      <a href='/'><button >Back</button></a>
+      <button onClick={goBack}>Back</button>
     </div>
   );
 };
 
 const User1 = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -231,12 +288,17 @@ const User1 = () => {
       <p  style={{padding: 20}}>The Port of Virginia - 600 World Trade Center, Norfolk, VA</p>
       <a href="https://www.virginiabusiness.com/article/port-of-virginia/ ">Learn more</a>
       <div style={{padding: 10}}/>
-      <a href='/'><button >Back</button></a>
+      <button onClick={goBack}>Back</button>
     </div>
   );
 };
 
 const User2 = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -251,12 +313,17 @@ const User2 = () => {
       <p  style={{padding: 20}}> Canon - 12000 Canon Blvd, Newport News, VA</p>
       <a href="https://www.cvi.canon.com/internet/portal/cvi/home/aboutus">Learn more</a>
       <div style={{padding: 10}}/>
-      <a href='/'><button >Back</button></a>
+      <button onClick={goBack}>Back</button>
     </div>
   );
 };
 
 const User3 = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -268,12 +335,17 @@ const User3 = () => {
       }}
     >
       <p  style={{padding: 20}}>City of Newport News - 2400 Washington Ave, Newport News, VA</p>
-      <a href='/'><button >Back</button></a>
+      <button onClick={goBack}>Back</button>
     </div>
   );
 };
 
 const User4 = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -285,12 +357,17 @@ const User4 = () => {
       }}
     >
       <p  style={{padding: 20}}>Langley Air Force Base - 210 Sweeney Blvd, Hampton, VA</p>
-      <a href='/'><button >Back</button></a>
+      <button onClick={goBack}>Back</button>
     </div>
   );
 };
 
 const User5 = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -302,12 +379,17 @@ const User5 = () => {
       }}
     >
       <p  style={{padding: 20}}>Norfolk Naval Base - 1530 Gilbert St, Norfolk, VA</p>
-      <a href='/'><button >Back</button></a>
+      <button onClick={goBack}>Back</button>
     </div>
   );
 };
 
 const User6 = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -319,12 +401,17 @@ const User6 = () => {
       }}
     >
       <p  style={{padding: 20}}>Smithfield - 200 Commerce St. Smithfield, VA</p>
-      <a href='/'><button >Back</button></a>
+      <button onClick={goBack}>Back</button>
     </div>
   );
 };
 
 const User7 = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -336,12 +423,17 @@ const User7 = () => {
       }}
     >
       <p  style={{padding: 20}}>HP Data Center - Newport News not too far from the Tech Center</p>
-      <a href='/'><button >Back</button></a>
+      <button onClick={goBack}>Back</button>
     </div>
   );
 };
 
 const User8 = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -353,12 +445,17 @@ const User8 = () => {
       }}
     >
       <p  style={{padding: 20}}>Jefferson Labs - 12000 Jefferson Avenue, Newport News VA</p>
-      <a href='/'><button >Back</button></a>
+      <button onClick={goBack}>Back</button>
     </div>
   );
 };
 
 const User9 = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -370,12 +467,17 @@ const User9 = () => {
       }}
     >
       <p  style={{padding: 20}}>Fort Eustis - 650 Monroe Ave, Ft Eustis, VA</p>
-      <a href='/'><button >Back</button></a>
+      <button onClick={goBack}>Back</button>
     </div>
   );
 };
 
 const User10 = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
+
   return (
     <div
       style={{
@@ -387,7 +489,7 @@ const User10 = () => {
       }}
     >
       <p  style={{padding: 20}}>NASA - 2 Langley Blvd, Hampton, VA</p>
-      <a href='/'><button >Back</button></a>
+      <button onClick={goBack}>Back</button>
     </div>
   );
 };

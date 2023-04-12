@@ -1,16 +1,31 @@
-import React from 'react';
+import React from "react";
+import { useState } from "react";
+import secureLocalStorage from 'react-secure-storage';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
-  
 import Home from "./Home";
 import {Screen, Turbine, Genplant, Siemens, Politicians, Landing, H2TC, TechC, Micro, Dominion, VNG,
 User1, User2, User3, User4, User5, User6, User7, User8, User9, User10} from "./Screen";
-  
+
 function App() {
+    const [isVerified, setIsVerified] = useState(false);
+  
+    const checkPw = () => {
+      const answer = document.getElementById("password").value;
+    
+      if (answer ===  secureLocalStorage.getItem("password")) { 
+        setIsVerified(true);
+      } else {
+        alert("Sorry, that's not it");
+      }
+    };
+  
   return (
+    <>
+    {isVerified ? 
     <div>
       <Router>
         <Routes>
@@ -39,6 +54,17 @@ function App() {
         </Routes>
       </Router>
     </div>
+    : 
+    (
+     <form onSubmit={checkPw}>
+      <text style={{top: '5%', left: '30%', position: 'absolute'}}>This site is password protected. Please entered the password to view the site.</text>
+      <div/>
+      <input style={{top: '10%', left: '40%', position: 'absolute'}} id="password" name="password" />
+      <button style={{top: '10%', left: '54%', position: 'absolute'}}>access site</button>
+     </form>
+   )
+ }
+ </>
   );
 }
   

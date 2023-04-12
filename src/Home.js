@@ -51,7 +51,6 @@ const Home = () =>{
       setUser(false)
     }
   }
-
     return (
       <div style={{
         backgroundImage: `url(${map})`,
