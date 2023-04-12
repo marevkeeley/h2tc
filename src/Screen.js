@@ -1,13 +1,13 @@
 import React from "react";
-import landing from './landing.png';
-import dominion from './dominion.png';
-import h2tc from './h2tc.png';
-import h2tc2 from './h2tc2.png';
-import micro from './micro.png';
-import offshore from './offshore.png';
-import vng from './vng.png';
-import siemens from './siemens.png';
-import canon from './canon.png';
+import landing from './assets/landing.png';
+import dominion from './assets/dominion.png';
+import h2tc from './assets/h2tc.png';
+import h2tc2 from './assets/h2tc2.png';
+import micro from './assets/micro.png';
+import offshore from './assets/offshore.png';
+import vng from './assets/vng.png';
+import siemens from './assets/siemens.png';
+import canon from './assets/canon.png';
 import {useNavigate} from 'react-router-dom';
 
 const Screen = () => {

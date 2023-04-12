@@ -1,5 +1,5 @@
 import './App.css';
-import map from "./map.png";
+import map from "./assets/map.png";
 import { Link } from "react-router-dom";
 import { GiWindTurbine } from "react-icons/gi";
 import { GiFactory } from "react-icons/gi";
