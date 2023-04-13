@@ -8,6 +8,11 @@ import {
 } from "react-router-dom";
 import Navbar from './components/navbar';
 import Home from "./Screens/Home";
+import Ecosystem from "./Screens/Ecosystem";
+import Map from "./Screens/Map";
+import Use from "./Screens/Use";
+import Design from "./Screens/Design";
+import Directory from "./Screens/Directory";
 import {Screen, Turbine, Genplant, Siemens, Politicians, Landing, H2TC, TechC, Micro, Dominion, VNG,
 User1, User2, User3, User4, User5, User6, User7, User8, User9, User10} from "./Screens/Screen";
 
@@ -32,6 +37,11 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/ecosystem" element={<Ecosystem />} />
+          <Route path="/map" element={<Map />} />
+          <Route path="/use-case" element={<Use />} />
+          <Route path="/design" element={<Design />} />
+          <Route path="/directory" element={<Directory />} />
           <Route path="/Screen" element={<Screen />} />
           <Route path="/turbine" element={<Turbine />} />
           <Route path="/genplant" element={<Genplant />} />

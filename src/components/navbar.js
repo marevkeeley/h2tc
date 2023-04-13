@@ -14,6 +14,7 @@ const navbarstyle = {
 
 const link = {
     textDecoration: 'none',
+    paddingHorizontal: 10,
 }
 
 const navbar= () =>{
@@ -29,7 +30,7 @@ const navbar= () =>{
       <NavLink style={link} to="/map">Peninsula Map</NavLink>
     </li>
     <li>
-      <NavLink style={link} to="/customers">Use Cases / Customers</NavLink>
+      <NavLink style={link} to="/use-case">Use Cases / Customers</NavLink>
     </li>
     <li>
       <NavLink style={link} to="/design">H2TC Design</NavLink>
