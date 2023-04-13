@@ -10,15 +10,6 @@ import siemens from '../assets/siemens.png';
 import canon from '../assets/canon.png';
 import {useNavigate} from 'react-router-dom';
 
-const Screen = () => {
-  return (
-    <div>
-      <h1>Details Page</h1>
-    </div>
-  );
-};
-
-
 const Turbine = () => {
   const navigate = useNavigate();
 	const goBack = () => {
@@ -494,6 +485,6 @@ const User10 = () => {
   );
 };
   
-export {Screen, Turbine, Genplant, Siemens, Politicians, Landing, H2TC, TechC, Micro, Dominion, VNG,
+export {Turbine, Genplant, Siemens, Politicians, Landing, H2TC, TechC, Micro, Dominion, VNG,
 User1, User2, User3, User4, User5, User6, User7, User8, User9, User10
 };
