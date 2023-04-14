@@ -1,9 +1,10 @@
 
 const Directory = () => {
     return (
-      <div>
-        <h1>Contact Directory</h1>
-      </div>
+      <body className="App-header">
+        <h1 style={{paddingVertical: 5, fontSize: 18}}>Contact Directory</h1>
+        <p>Coming soon</p>
+      </body>
     );
   };
   

@@ -1,9 +1,10 @@
 
 const HydrogenHub = () => {
     return (
-      <div>
-        <h1>Hydrogen Hub</h1>
-      </div>
+      <body className="App-header">
+        <h1 style={{paddingVertical: 5, fontSize: 18}}>Hydrogen Hub</h1>
+        <p>Coming soon</p>
+      </body>
     );
   };
   

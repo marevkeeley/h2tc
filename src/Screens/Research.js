@@ -1,9 +1,10 @@
 
 const Research = () => {
     return (
-      <div>
-        <h1>Research</h1>
-      </div>
+        <body className="App-header">
+          <h1 style={{paddingVertical: 5, fontSize: 18}}>Research</h1>
+        <p>Coming soon</p>
+      </body>
     );
   };
   

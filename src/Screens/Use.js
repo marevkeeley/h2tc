@@ -1,9 +1,10 @@
 
 const Use = () => {
     return (
-      <div>
-        <h1>Use Cases / Customers</h1>
-      </div>
+      <body className="App-header">
+        <h1 style={{paddingVertical: 5, fontSize: 18}}>Use Cases / Customers</h1>
+        <p>Coming soon</p>
+      </body>
     );
   };
   
