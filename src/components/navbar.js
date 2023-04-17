@@ -17,7 +17,7 @@ const link = {
   color: 'black',
 }
 
-const navbar= () =>{
+const navbar = () => {
   return (
     <div style={navbarstyle}>
       <li><div style={{padding: 3}}/></li>
