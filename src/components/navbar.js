@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
 import logo from '../assets/logo.png';
+import {BsSearch} from "react-icons/bs";
 
 const navbarstyle = {
   display: 'flex',
@@ -38,6 +39,9 @@ const navbar = () => {
       </li>
       <li>
         <NavLink style={link} to="/directory">Contact Directory</NavLink>
+      </li>
+      <li>
+        <NavLink style={link} to="/search"><BsSearch /></NavLink>
       </li>
       <li><div style={{padding: 3}}/></li>
     </div>

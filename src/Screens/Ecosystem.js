@@ -12,7 +12,7 @@ const Ecosystem = () => {
       }}
     >
       <body style={{ overflow: "hidden" }} className="Map">
-        <button
+        {/* <button
           style={{
             backgroundColor: "transparent",
             border: "2px solid black",
@@ -21,7 +21,7 @@ const Ecosystem = () => {
             left: '66%',
             top: '56%',
           }}
-        />
+        /> */}
       </body>
     </div>
   );
