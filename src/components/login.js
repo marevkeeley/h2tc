@@ -1,15 +1,9 @@
 import React, {useState} from 'react';
-import secureLocalStorage from 'react-secure-storage';
 
 const Login = (props) => {
     const [pass, setPass] = useState("");
-    secureLocalStorage.setItem("password", "h2future")
     const handleSubmit = (e) => {
-        const check = secureLocalStorage.getItem("password")
-        console.log(check)
-        console.log(pass)
-        console.log(pass === check)
-        if (pass ===  check) {
+        if (pass ===  "h2future") {
             e.preventDefault();
             props.onFormSwitch('home')
         } else {

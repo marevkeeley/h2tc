@@ -25,3 +25,11 @@
   font-size: calc(10px + 2vmin);
   color: 'black';
 }
+
+.Screen {
+  align-items: "center";
+  justify-content: "center";
+  height: "100%";
+  width: "100%";
+  text-align: "center";
+}
