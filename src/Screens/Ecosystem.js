@@ -14,8 +14,8 @@ const Ecosystem = () => {
       <body style={{ overflow: "hidden" }} className="Map">
         <a
           style={{
-            // backgroundColor: "transparent",
-            border: "1px solid gray",
+            backgroundColor: "transparent",
+            // border: "1px solid gray",
             padding: 52,
             position: 'absolute',
             left: '66%',
