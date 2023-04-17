@@ -56,7 +56,12 @@ const Genplant = () => {
       }}
     >
       <div style={{ padding: 20 }}>
-        <a href="https://genplant.com/ " style={{ padding: 20 }}>
+        <a
+          href="https://genplant.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ padding: 20 }}
+        >
           Genplant
         </a>
         <br />
@@ -89,7 +94,11 @@ const Siemens = () => {
         alt="Siemens"
       ></img>
       <p>
-        <a href="https://fuelcellsworks.com/news/siemens-energy-and-intermountain-power-agency-drive-transition-to-sustainable-energy-through-study-of-hydrogen-energy-storage-at-a-utility-scale-power-plant-in-utah/ ">
+        <a
+          href="https://fuelcellsworks.com/news/siemens-energy-and-intermountain-power-agency-drive-transition-to-sustainable-energy-through-study-of-hydrogen-energy-storage-at-a-utility-scale-power-plant-in-utah/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Siemens
         </a>
         <br />
@@ -118,9 +127,30 @@ const Politicians = () => {
       }}
     >
       <p style={{ padding: 20 }}>
-        <a href="https://www.governor.virginia.gov/">Governor in Virginia</a>
+        <a
+          href="https://www.governor.virginia.gov/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Governor in Virginia
+        </a>
         <br />
-        <a href="https://www.senate.gov/states/VA/intro.htm ">Senators in DC</a>
+        <a
+          href="https://www.senate.gov/states/VA/intro.htm"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Senators in DC
+        </a>
+        <br />
+        <a
+          href="https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.p13"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Government
+        </a>
       </p>
       <button onClick={goBack}>Back</button>
     </div>
@@ -154,7 +184,11 @@ const Landing = () => {
         This is where the electricity will come in from the offshore wind and be
         stored in a battery bank.
       </p>
-      <a href="https://www.azocleantech.com/article.aspx?ArticleID=1257 ">
+      <a
+        href="https://www.azocleantech.com/article.aspx?ArticleID=1257"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Learn More
       </a>
       <br />
@@ -211,7 +245,13 @@ const TechC = () => {
         <br />
         The Landing at Virginia Beach - 203 Red Horse Dr, Virginia Beach, VA
       </p>
-      <a href="http://innovateattechcenterva.com/plans-pricing/ ">Lean More</a>
+      <a
+        href="http://innovateattechcenterva.com/plans-pricing/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Lean More
+      </a>
       <br />
       <div style={{ padding: 10 }} />
       <button onClick={goBack}>Back</button>
@@ -272,7 +312,11 @@ const Dominion = () => {
       <p style={{ padding: 20 }}>
         Dominion Power - 551 Industrial Park, Dr., Newport News, VA
       </p>
-      <a href="https://wjla.com/news/local/dominion-energy-is-planning-to-build-the-largest-offshore-wind-project-heres-how ">
+      <a
+        href="https://wjla.com/news/local/dominion-energy-is-planning-to-build-the-largest-offshore-wind-project-heres-how"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Learn More
       </a>
       <div style={{ padding: 10 }} />
@@ -305,7 +349,11 @@ const VNG = () => {
       <p style={{ padding: 20 }}>
         Virginia Natural Gas - 746 Diligence Dr., Newport News, VA
       </p>
-      <a href="https://www.wavy.com/news/local-news/norfolk/whats-that-smell-strange-odor-across-parts-of-norfolk-leaves-officials-scratching-their-heads/ ">
+      <a
+        href="https://www.wavy.com/news/local-news/norfolk/whats-that-smell-strange-odor-across-parts-of-norfolk-leaves-officials-scratching-their-heads/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Learn More
       </a>
       <div style={{ padding: 10 }} />
@@ -338,7 +386,11 @@ const User1 = () => {
       <p style={{ padding: 20 }}>
         The Port of Virginia - 600 World Trade Center, Norfolk, VA
       </p>
-      <a href="https://www.virginiabusiness.com/article/port-of-virginia/ ">
+      <a
+        href="https://www.virginiabusiness.com/article/port-of-virginia/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Learn more
       </a>
       <div style={{ padding: 10 }} />
@@ -369,7 +421,11 @@ const User2 = () => {
         alt="Port of Virginia"
       ></img>
       <p style={{ padding: 20 }}> Canon - 12000 Canon Blvd, Newport News, VA</p>
-      <a href="https://www.cvi.canon.com/internet/portal/cvi/home/aboutus">
+      <a
+        href="https://www.cvi.canon.com/internet/portal/cvi/home/aboutus"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Learn more
       </a>
       <div style={{ padding: 10 }} />

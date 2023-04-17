@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Scroll, SearchList } from "./card";
+import { Scroll, SearchList } from "./searchC";
 
 function Search({ details }) {
   const [searchField, setSearchField] = useState("");

@@ -35,7 +35,14 @@ const Home = () => {
         }}
       >
         <header style={{ fontWeight: "bold" }}>
-          <a href="/govirginia" style={{ textDecoration: "none" }}>
+          <a
+            href={
+              "https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.p3"
+            }
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
             GoVirginia Charter
           </a>
         </header>
@@ -70,7 +77,11 @@ const Home = () => {
           <li>Financials</li>
           <li>Proposal</li>
           <li>
-            <a href="https://docs.google.com/spreadsheets/d/1v6aOZfqOBMFHpp8F3c-rCi136W0RsfsdUEgPgCa3GXc/edit#gid=0">
+            <a
+              href="https://docs.google.com/spreadsheets/d/1v6aOZfqOBMFHpp8F3c-rCi136W0RsfsdUEgPgCa3GXc/edit#gid=0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Go Fast Plan
             </a>
           </li>
@@ -88,7 +99,14 @@ const Home = () => {
           padding: 10,
         }}
       >
-        <header style={{ fontWeight: "bold" }}>Project Plans</header>
+        <a
+          href="https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.g22d80158ac8_0_182"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none" }}
+        >
+          <header style={{ fontWeight: "bold" }}>Project Plans</header>
+        </a>
         <div style={{ padding: 40 }} />
       </div>
       <div
