@@ -1,3 +1,6 @@
+/** 
+ * A record of all pages and their paths so that users can search them. 
+*/
 const pages = [
     {
         id: 0,

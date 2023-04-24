@@ -10,6 +10,11 @@ import siemens from "../assets/siemens.png";
 import canon from "../assets/canon.png";
 import { useNavigate } from "react-router-dom";
 
+/**
+ * A set of pages to show the details of items from the map screen. The user will navagete here
+ * from the map page where they will see more information and then they will return to the map
+ * page with a back button.
+ */
 const Turbine = () => {
   const navigate = useNavigate();
   const goBack = () => {

@@ -1,3 +1,7 @@
+/**
+ * Creates a page to show use cases and customers.
+ * @returns the use case page.
+ */
 const Use = () => {
   return (
     <body className="App-header">

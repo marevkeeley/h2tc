@@ -32,6 +32,10 @@ import {
   User10,
 } from "./Screens/MapScreens";
 
+/**
+ * Holds the routes to every page in the website.
+ * @returns routes for all of the pages.
+ */
 const Navagate = () => {
   return (
     <Routes>

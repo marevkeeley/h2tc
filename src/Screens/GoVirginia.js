@@ -1,3 +1,7 @@
+/**
+ * Creates a page to show the GoVirginia information.
+ * @returns the GoVirginia page.
+ */
 const GoVirginia = () => {
   return (
     <body className="App-header">

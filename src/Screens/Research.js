@@ -1,3 +1,7 @@
+/**
+ * Creates a page to show current research.
+ * @returns the research page.
+ */
 const Research = () => {
   return (
     <body className="App-header">

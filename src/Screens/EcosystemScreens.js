@@ -1,4 +1,9 @@
 import { useNavigate } from "react-router-dom";
+/**
+ * A set of pages to show the details of items from the ecosystem screen. The user will navagete here
+ * from the ecosystem page where they will see more information and then they will return to the ecosystem
+ * page with a back button.
+ */
 
 const Wind = () => {
   const navigate = useNavigate();

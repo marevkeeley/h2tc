@@ -1,3 +1,7 @@
+/**
+ * Creates a page to show hydrogen hub information.
+ * @returns the hydrogen hub page.
+ */
 const HydrogenHub = () => {
   return (
     <body className="App-header">

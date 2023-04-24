@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import logo from '../assets/logo.png';
 import {BsSearch} from "react-icons/bs";
 
+//Style for the navigation bar.
 const navbarstyle = {
   display: 'flex',
   justifyContent: 'space-between',
@@ -13,11 +14,16 @@ const navbarstyle = {
   position: 'relative',
 }
 
+//Style for the links in the navbar.
 const link = {
   textDecoration: 'none',
   color: 'black',
 }
 
+/**
+ * Creates a navagation bar at the tops of the page.
+ * @returns a navigaion bar
+ */
 const navbar = () => {
   return (
     <div style={navbarstyle}>

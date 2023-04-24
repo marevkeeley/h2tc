@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { disableReactDevTools } from '@fvilers/disable-react-devtools';
 
+// This prevents users from seeing the code or determining the login password.
 if (process.env.NODE_ENV === 'production') {
   disableReactDevTools();
 }

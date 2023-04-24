@@ -8,6 +8,7 @@ import { GiFamilyHouse } from "react-icons/gi";
 import { BsFillHouseFill } from "react-icons/bs";
 import { useState } from "react";
 
+//Styles for various parts of the page
 const icon = {
   textAlign: "center",
   position: "absolute",
@@ -40,9 +41,15 @@ const text = {
   color: "#0047AB",
 };
 
+/**
+ * Creates a page to show the map of Virginia. The page consists of a image with buttons added on top
+ * of it to allow icons to be clickable if the user wants to see more information about that location.
+ * @returns the map page.
+ */
 const Map = () => {
   const [user, setUser] = useState(false);
 
+  //Allows users to choose if they want to see the users or not by toggling the users on and off.
   const filter = () => {
     if (user === false) {
       setUser(true);
@@ -52,6 +59,7 @@ const Map = () => {
   };
   return (
     <div
+      //bakground
       style={{
         backgroundImage: `url(${map})`,
         backgroundRepeat: "no-repeat",
@@ -63,6 +71,7 @@ const Map = () => {
       }}
     >
       <body style={{ overflow: "hidden" }} className="Map">
+        {/* Key beside map */}
         <div style={Object.assign({ left: "80%", top: "12%" }, text)}>
           <p style={{ fontWeight: "bold" }}>Key</p>
         </div>
@@ -108,6 +117,7 @@ const Map = () => {
         >
           <text>Filter users</text>
         </div>
+        {/* Locations on map */}
         <Link
           to="/turbine"
           style={Object.assign({ left: "60%", top: "85%" }, icon2)}
@@ -150,6 +160,7 @@ const Map = () => {
         >
           <GiFactory />
         </Link>
+        {/* Extra links */}
         <Link
           to="/genplant"
           style={Object.assign({ left: "80%", top: "75%" }, link)}
@@ -168,6 +179,7 @@ const Map = () => {
         >
           Politicians
         </Link>
+        {/* Users on map */}
         {user && (
           <div>
             <Link

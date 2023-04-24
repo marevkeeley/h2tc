@@ -1,3 +1,7 @@
+/**
+ * Creates a page to show design.
+ * @returns the design page.
+ */
 const Design = () => {
   return (
     <body className="App-header">

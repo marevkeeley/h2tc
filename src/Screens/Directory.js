@@ -1,3 +1,7 @@
+/**
+ * Creates a page to show the directory.
+ * @returns the directory page.
+ */
 const Directory = () => {
   return (
     <body className="App-header">

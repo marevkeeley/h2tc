@@ -1,6 +1,11 @@
 import Search from '../components/search';
 import initialDetails from '../pages';
 
+/**
+ * Creates a page where users can search through the pages to find what they are interested in.
+ * This uses the Search component. 
+ * @returns the search page.
+ */
 const Searchpage = () => {
     return (
       <body className="App-header">

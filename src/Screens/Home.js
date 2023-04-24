@@ -1,3 +1,8 @@
+/**
+ * Creates a home page with serveral boxes sharing important information and linking to other
+ * pages of the website where more information can be found.
+ * @returns the home page.
+ */
 const Home = () => {
   return (
     <body className="App-header" style={{ backgroundColor: "#d3d3d3" }}>
