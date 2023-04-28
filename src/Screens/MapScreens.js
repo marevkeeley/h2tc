@@ -2,13 +2,13 @@ import React from "react";
 import landing from "../assets/landing.png";
 import dominion from "../assets/dominion.png";
 import h2tc from "../assets/h2tc.png";
-import h2tc2 from "../assets/h2tc2.png";
 import micro from "../assets/micro.png";
 import offshore from "../assets/offshore.png";
 import vng from "../assets/vng.png";
-import siemens from "../assets/siemens.png";
-import canon from "../assets/canon.png";
 import { useNavigate } from "react-router-dom";
+// import siemens from "../assets/siemens.png";
+// import canon from "../assets/canon.png";
+// import h2tc2 from "../assets/h2tc2.png";
 
 /**
  * A set of pages to show the details of items from the map screen. The user will navagete here
@@ -38,124 +38,6 @@ const Turbine = () => {
       ></img>
       <p style={{ padding: 20 }}>
         Offshore wind out in the Atlantic Ocean off the Shore of Virginia Beach
-      </p>
-      <button onClick={goBack}>Back</button>
-    </div>
-  );
-};
-
-const Genplant = () => {
-  const navigate = useNavigate();
-  const goBack = () => {
-    navigate(-1);
-  };
-
-  return (
-    <div
-      style={{
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100%",
-        width: "100%",
-        textAlign: "center",
-      }}
-    >
-      <div style={{ padding: 20 }}>
-        <a
-          href="https://genplant.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ padding: 20 }}
-        >
-          Genplant
-        </a>
-        <br />
-        <p>More details coming soon</p>
-        <button onClick={goBack}>Back</button>
-      </div>
-    </div>
-  );
-};
-
-const Siemens = () => {
-  const navigate = useNavigate();
-  const goBack = () => {
-    navigate(-1);
-  };
-
-  return (
-    <div
-      style={{
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100%",
-        width: "100%",
-        textAlign: "center",
-      }}
-    >
-      <img
-        style={{ scale: "50%", margin: -100 }}
-        src={siemens}
-        alt="Siemens"
-      ></img>
-      <p>
-        <a
-          href="https://fuelcellsworks.com/news/siemens-energy-and-intermountain-power-agency-drive-transition-to-sustainable-energy-through-study-of-hydrogen-energy-storage-at-a-utility-scale-power-plant-in-utah/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Siemens
-        </a>
-        <br />
-        This list will grow as we understand the players better. These players
-        will be inside of the minigrids and hydrogen electrolysis plants.
-      </p>
-      <button onClick={goBack}>Back</button>
-    </div>
-  );
-};
-
-const Politicians = () => {
-  const navigate = useNavigate();
-  const goBack = () => {
-    navigate(-1);
-  };
-
-  return (
-    <div
-      style={{
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100%",
-        width: "100%",
-        textAlign: "center",
-      }}
-    >
-      <p style={{ padding: 20 }}>
-        <a
-          href="https://www.governor.virginia.gov/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Governor in Virginia
-        </a>
-        <br />
-        <a
-          href="https://www.senate.gov/states/VA/intro.htm"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Senators in DC
-        </a>
-        <br />
-        <a
-          href="https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.p13"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {" "}
-          Government
-        </a>
       </p>
       <button onClick={goBack}>Back</button>
     </div>
@@ -223,42 +105,6 @@ const H2TC = () => {
       <p style={{ padding: 20 }}>
         The H2TC - 700 Tech Center Parkway, Newport News VA
       </p>
-      <button onClick={goBack}>Back</button>
-    </div>
-  );
-};
-
-const TechC = () => {
-  const navigate = useNavigate();
-  const goBack = () => {
-    navigate(-1);
-  };
-
-  return (
-    <div
-      style={{
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100%",
-        width: "100%",
-        textAlign: "center",
-      }}
-    >
-      <img src={h2tc2} style={{ scale: "50%", margin: -150 }} alt="h2tc2"></img>
-      <p style={{ padding: 20 }}>
-        Hydrogen Production Plant
-        <br />
-        The Landing at Virginia Beach - 203 Red Horse Dr, Virginia Beach, VA
-      </p>
-      <a
-        href="http://innovateattechcenterva.com/plans-pricing/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Lean More
-      </a>
-      <br />
-      <div style={{ padding: 10 }} />
       <button onClick={goBack}>Back</button>
     </div>
   );
@@ -367,7 +213,7 @@ const VNG = () => {
   );
 };
 
-const User1 = () => {
+const Port = () => {
   const navigate = useNavigate();
   const goBack = () => {
     navigate(-1);
@@ -404,90 +250,7 @@ const User1 = () => {
   );
 };
 
-const User2 = () => {
-  const navigate = useNavigate();
-  const goBack = () => {
-    navigate(-1);
-  };
-
-  return (
-    <div
-      style={{
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100%",
-        width: "100%",
-        textAlign: "center",
-      }}
-    >
-      <img
-        src={canon}
-        style={{ scale: "50%", margin: -100 }}
-        alt="Port of Virginia"
-      ></img>
-      <p style={{ padding: 20 }}> Canon - 12000 Canon Blvd, Newport News, VA</p>
-      <a
-        href="https://www.cvi.canon.com/internet/portal/cvi/home/aboutus"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn more
-      </a>
-      <div style={{ padding: 10 }} />
-      <button onClick={goBack}>Back</button>
-    </div>
-  );
-};
-
-const User3 = () => {
-  const navigate = useNavigate();
-  const goBack = () => {
-    navigate(-1);
-  };
-
-  return (
-    <div
-      style={{
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100%",
-        width: "100%",
-        textAlign: "center",
-      }}
-    >
-      <p style={{ padding: 20 }}>
-        City of Newport News - 2400 Washington Ave, Newport News, VA
-      </p>
-      <button onClick={goBack}>Back</button>
-    </div>
-  );
-};
-
-const User4 = () => {
-  const navigate = useNavigate();
-  const goBack = () => {
-    navigate(-1);
-  };
-
-  return (
-    <div
-      style={{
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100%",
-        width: "100%",
-        textAlign: "center",
-      }}
-    >
-      <p style={{ padding: 20 }}>
-        Langley Air Force Base - 210 Sweeney Blvd, Hampton, VA
-      </p>
-      <button onClick={goBack}>Back</button>
-    </div>
-  );
-};
-
-const User5 = () => {
+const Naval = () => {
   const navigate = useNavigate();
   const goBack = () => {
     navigate(-1);
@@ -511,55 +274,7 @@ const User5 = () => {
   );
 };
 
-const User6 = () => {
-  const navigate = useNavigate();
-  const goBack = () => {
-    navigate(-1);
-  };
-
-  return (
-    <div
-      style={{
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100%",
-        width: "100%",
-        textAlign: "center",
-      }}
-    >
-      <p style={{ padding: 20 }}>
-        Smithfield - 200 Commerce St. Smithfield, VA
-      </p>
-      <button onClick={goBack}>Back</button>
-    </div>
-  );
-};
-
-const User7 = () => {
-  const navigate = useNavigate();
-  const goBack = () => {
-    navigate(-1);
-  };
-
-  return (
-    <div
-      style={{
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100%",
-        width: "100%",
-        textAlign: "center",
-      }}
-    >
-      <p style={{ padding: 20 }}>
-        HP Data Center - Newport News not too far from the Tech Center
-      </p>
-      <button onClick={goBack}>Back</button>
-    </div>
-  );
-};
-
-const User8 = () => {
+const Jefferson = () => {
   const navigate = useNavigate();
   const goBack = () => {
     navigate(-1);
@@ -583,7 +298,7 @@ const User8 = () => {
   );
 };
 
-const User9 = () => {
+const Cox = () => {
   const navigate = useNavigate();
   const goBack = () => {
     navigate(-1);
@@ -599,53 +314,342 @@ const User9 = () => {
         textAlign: "center",
       }}
     >
-      <p style={{ padding: 20 }}>Fort Eustis - 650 Monroe Ave, Ft Eustis, VA</p>
+      <p style={{ padding: 20 }}>Cox - All over Virginia</p>
       <button onClick={goBack}>Back</button>
     </div>
   );
 };
 
-const User10 = () => {
-  const navigate = useNavigate();
-  const goBack = () => {
-    navigate(-1);
-  };
+// const Eustis = () => {
+//   const navigate = useNavigate();
+//   const goBack = () => {
+//     navigate(-1);
+//   };
+//   return (
+//     <div
+//       style={{
+//         alignItems: "center",
+//         justifyContent: "center",
+//         height: "100%",
+//         width: "100%",
+//         textAlign: "center",
+//       }}
+//     >
+//       <p style={{ padding: 20 }}>Fort Eustis - 650 Monroe Ave, Ft Eustis, VA</p>
+//       <button onClick={goBack}>Back</button>
+//     </div>
+//   );
+// };
 
-  return (
-    <div
-      style={{
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100%",
-        width: "100%",
-        textAlign: "center",
-      }}
-    >
-      <p style={{ padding: 20 }}>NASA - 2 Langley Blvd, Hampton, VA</p>
-      <button onClick={goBack}>Back</button>
-    </div>
-  );
-};
+// const NASA = () => {
+//   const navigate = useNavigate();
+//   const goBack = () => {
+//     navigate(-1);
+//   };
+//   return (
+//     <div
+//       style={{
+//         alignItems: "center",
+//         justifyContent: "center",
+//         height: "100%",
+//         width: "100%",
+//         textAlign: "center",
+//       }}
+//     >
+//       <p style={{ padding: 20 }}>NASA - 2 Langley Blvd, Hampton, VA</p>
+//       <button onClick={goBack}>Back</button>
+//     </div>
+//   );
+// };
+
+// const Smithfield = () => {
+//   const navigate = useNavigate();
+//   const goBack = () => {
+//     navigate(-1);
+//   };
+//   return (
+//     <div
+//       style={{
+//         alignItems: "center",
+//         justifyContent: "center",
+//         height: "100%",
+//         width: "100%",
+//         textAlign: "center",
+//       }}
+//     >
+//       <p style={{ padding: 20 }}>
+//         Smithfield - 200 Commerce St. Smithfield, VA
+//       </p>
+//       <button onClick={goBack}>Back</button>
+//     </div>
+//   );
+// };
+
+// const HP = () => {
+//   const navigate = useNavigate();
+//   const goBack = () => {
+//     navigate(-1);
+//   };
+//   return (
+//     <div
+//       style={{
+//         alignItems: "center",
+//         justifyContent: "center",
+//         height: "100%",
+//         width: "100%",
+//         textAlign: "center",
+//       }}
+//     >
+//       <p style={{ padding: 20 }}>
+//         HP Data Center - Newport News not too far from the Tech Center
+//       </p>
+//       <button onClick={goBack}>Back</button>
+//     </div>
+//   );
+// };
+
+// const Cannon = () => {
+//   const navigate = useNavigate();
+//   const goBack = () => {
+//     navigate(-1);
+//   };
+//   return (
+//     <div
+//       style={{
+//         alignItems: "center",
+//         justifyContent: "center",
+//         height: "100%",
+//         width: "100%",
+//         textAlign: "center",
+//       }}
+//     >
+//       <img
+//         src={canon}
+//         style={{ scale: "50%", margin: -100 }}
+//         alt="Port of Virginia"
+//       ></img>
+//       <p style={{ padding: 20 }}> Canon - 12000 Canon Blvd, Newport News, VA</p>
+//       <a
+//         href="https://www.cvi.canon.com/internet/portal/cvi/home/aboutus"
+//         target="_blank"
+//         rel="noopener noreferrer"
+//       >
+//         Learn more
+//       </a>
+//       <div style={{ padding: 10 }} />
+//       <button onClick={goBack}>Back</button>
+//     </div>
+//   );
+// };
+
+// const Newport = () => {
+//   const navigate = useNavigate();
+//   const goBack = () => {
+//     navigate(-1);
+//   };
+//   return (
+//     <div
+//       style={{
+//         alignItems: "center",
+//         justifyContent: "center",
+//         height: "100%",
+//         width: "100%",
+//         textAlign: "center",
+//       }}
+//     >
+//       <p style={{ padding: 20 }}>
+//         City of Newport News - 2400 Washington Ave, Newport News, VA
+//       </p>
+//       <button onClick={goBack}>Back</button>
+//     </div>
+//   );
+// };
+
+// const Langley = () => {
+//   const navigate = useNavigate();
+//   const goBack = () => {
+//     navigate(-1);
+//   };
+//   return (
+//     <div
+//       style={{
+//         alignItems: "center",
+//         justifyContent: "center",
+//         height: "100%",
+//         width: "100%",
+//         textAlign: "center",
+//       }}
+//     >
+//       <p style={{ padding: 20 }}>
+//         Langley Air Force Base - 210 Sweeney Blvd, Hampton, VA
+//       </p>
+//       <button onClick={goBack}>Back</button>
+//     </div>
+//   );
+// };
+
+// const TechC = () => {
+//   const navigate = useNavigate();
+//   const goBack = () => {
+//     navigate(-1);
+//   };
+//   return (
+//     <div
+//       style={{
+//         alignItems: "center",
+//         justifyContent: "center",
+//         height: "100%",
+//         width: "100%",
+//         textAlign: "center",
+//       }}
+//     >
+//       <img src={h2tc2} style={{ scale: "50%", margin: -150 }} alt="h2tc2"></img>
+//       <p style={{ padding: 20 }}>
+//         Hydrogen Production Plant
+//         <br />
+//         The Landing at Virginia Beach - 203 Red Horse Dr, Virginia Beach, VA
+//       </p>
+//       <a
+//         href="http://innovateattechcenterva.com/plans-pricing/"
+//         target="_blank"
+//         rel="noopener noreferrer"
+//       >
+//         Lean More
+//       </a>
+//       <br />
+//       <div style={{ padding: 10 }} />
+//       <button onClick={goBack}>Back</button>
+//     </div>
+//   );
+// };
+
+// const Genplant = () => {
+//   const navigate = useNavigate();
+//   const goBack = () => {
+//     navigate(-1);
+//   };
+
+//   return (
+//     <div
+//       style={{
+//         alignItems: "center",
+//         justifyContent: "center",
+//         height: "100%",
+//         width: "100%",
+//         textAlign: "center",
+//       }}
+//     >
+//       <div style={{ padding: 20 }}>
+//         <a
+//           href="https://genplant.com/"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//           style={{ padding: 20 }}
+//         >
+//           Genplant
+//         </a>
+//         <br />
+//         <p>More details coming soon</p>
+//         <button onClick={goBack}>Back</button>
+//       </div>
+//     </div>
+//   );
+// };
+
+// const Siemens = () => {
+//   const navigate = useNavigate();
+//   const goBack = () => {
+//     navigate(-1);
+//   };
+
+//   return (
+//     <div
+//       style={{
+//         alignItems: "center",
+//         justifyContent: "center",
+//         height: "100%",
+//         width: "100%",
+//         textAlign: "center",
+//       }}
+//     >
+//       <img
+//         style={{ scale: "50%", margin: -100 }}
+//         src={siemens}
+//         alt="Siemens"
+//       ></img>
+//       <p>
+//         <a
+//           href="https://fuelcellsworks.com/news/siemens-energy-and-intermountain-power-agency-drive-transition-to-sustainable-energy-through-study-of-hydrogen-energy-storage-at-a-utility-scale-power-plant-in-utah/"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           Siemens
+//         </a>
+//         <br />
+//         This list will grow as we understand the players better. These players
+//         will be inside of the minigrids and hydrogen electrolysis plants.
+//       </p>
+//       <button onClick={goBack}>Back</button>
+//     </div>
+//   );
+// };
+
+// const Politicians = () => {
+//   const navigate = useNavigate();
+//   const goBack = () => {
+//     navigate(-1);
+//   };
+
+//   return (
+//     <div
+//       style={{
+//         alignItems: "center",
+//         justifyContent: "center",
+//         height: "100%",
+//         width: "100%",
+//         textAlign: "center",
+//       }}
+//     >
+//       <p style={{ padding: 20 }}>
+//         <a
+//           href="https://www.governor.virginia.gov/"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           Governor in Virginia
+//         </a>
+//         <br />
+//         <a
+//           href="https://www.senate.gov/states/VA/intro.htm"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           Senators in DC
+//         </a>
+//         <br />
+//         <a
+//           href="https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.p13"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           {" "}
+//           Government
+//         </a>
+//       </p>
+//       <button onClick={goBack}>Back</button>
+//     </div>
+//   );
+// };
 
 export {
   Turbine,
-  Genplant,
-  Siemens,
-  Politicians,
   Landing,
   H2TC,
-  TechC,
   Micro,
   Dominion,
   VNG,
-  User1,
-  User2,
-  User3,
-  User4,
-  User5,
-  User6,
-  User7,
-  User8,
-  User9,
-  User10,
+  Port,
+  Naval,
+  Jefferson,
+  Cox,
 };

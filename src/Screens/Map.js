@@ -1,12 +1,6 @@
 import "../App.css";
 import map from "../assets/map.png";
 import { Link } from "react-router-dom";
-import { GiWindTurbine } from "react-icons/gi";
-import { GiFactory } from "react-icons/gi";
-import { FaCarBattery } from "react-icons/fa";
-import { GiFamilyHouse } from "react-icons/gi";
-import { BsFillHouseFill } from "react-icons/bs";
-import { useState } from "react";
 
 //Styles for various parts of the page
 const icon = {
@@ -22,17 +16,17 @@ const icon2 = {
   scale: "150%",
 };
 
-const link = {
-  backgroundColor: "white",
-  borderRadius: 10,
-  padding: 5,
-  textAlign: "center",
-  position: "absolute",
-  fontSize: 16,
-  underlined: "false",
-  textDecoration: "none",
-  color: "#0047AB",
-};
+// const link = {
+//   backgroundColor: "white",
+//   borderRadius: 10,
+//   padding: 5,
+//   textAlign: "center",
+//   position: "absolute",
+//   fontSize: 16,
+//   underlined: "false",
+//   textDecoration: "none",
+//   color: "#0047AB",
+// };
 
 const text = {
   textAlign: "center",
@@ -47,16 +41,17 @@ const text = {
  * @returns the map page.
  */
 const Map = () => {
-  const [user, setUser] = useState(false);
+  // const [user, setUser] = useState(false);
 
   //Allows users to choose if they want to see the users or not by toggling the users on and off.
-  const filter = () => {
-    if (user === false) {
-      setUser(true);
-    } else {
-      setUser(false);
-    }
-  };
+  // const filter = () => {
+  //   if (user === false) {
+  //     setUser(true);
+  //   } else {
+  //     setUser(false);
+  //   }
+  // };
+
   return (
     <div
       //bakground
@@ -64,7 +59,7 @@ const Map = () => {
         backgroundImage: `url(${map})`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "start",
-        backgroundSize: "74%",
+        backgroundSize: "78%",
         marginTop: 20,
         marginLeft: 20,
         overflow: "hidden",
@@ -72,38 +67,43 @@ const Map = () => {
     >
       <body style={{ overflow: "hidden" }} className="Map">
         {/* Key beside map */}
-        <div style={Object.assign({ left: "80%", top: "12%" }, text)}>
+        <div style={Object.assign({ left: "82%", top: "12%" }, text)}>
           <p style={{ fontWeight: "bold" }}>Key</p>
         </div>
-        <GiWindTurbine
-          style={Object.assign({ left: "80%", top: "20%" }, icon)}
-        />
-        <div style={Object.assign({ left: "83%", top: "18%" }, text)}>
+         <img
+            src={require("../assets/1.png")}
+            alt="Turbine"
+            style={Object.assign({ left: "82%", top: "20%", width: '3%' }, icon)}
+          />
+        <div style={Object.assign({ left: "86%", top: "18%" }, text)}>
           <p>Turbine</p>
         </div>
-        <FaCarBattery
-          style={Object.assign({ left: "80%", top: "25%" }, icon)}
-        />
-        <div style={Object.assign({ left: "83%", top: "23%" }, text)}>
-          <p>Electricity Storage</p>
+        <img
+            src={require("../assets/2.png")}
+            alt="Landing"
+            style={Object.assign({ left: "82%", top: "30%", width: '3%' }, icon)}
+          />
+        <div style={Object.assign({ left: "86%", top: "29%" }, text)}>
+          <p>Production</p>
         </div>
-        <GiFamilyHouse
-          style={Object.assign({ left: "80%", top: "30%" }, icon)}
-        />
-        <div style={Object.assign({ left: "83%", top: "28%" }, text)}>
+        <img
+            src={require("../assets/26.png")}
+            alt="H2TC Center"
+            style={Object.assign({ left: "82%", top: "40%", width: '3%' }, icon)}
+          />
+        <div style={Object.assign({ left: "86%", top: "39%" }, text)}>
           <p>H2 Tech Center</p>
         </div>
-        <GiFactory style={Object.assign({ left: "80%", top: "35%" }, icon)} />
-        <div style={Object.assign({ left: "83%", top: "33%" }, text)}>
-          <p>Production Plant</p>
+        <img
+            src={require("../assets/23.png")}
+            alt="Microgrid"
+            style={Object.assign({ left: "82%", top: "50%", width: '3%' }, icon)}
+          />
+        <div style={Object.assign({ left: "86%", top: "49%" }, text)}>
+          <p>MicroGrid</p>
         </div>
-        <BsFillHouseFill
-          style={Object.assign({ left: "80%", top: "40%" }, icon)}
-        />
-        <div style={Object.assign({ left: "83%", top: "38%" }, text)}>
-          <p>Potential User</p>
-        </div>
-        <div
+  
+        {/* <div
           onClick={() => filter()}
           style={Object.assign(
             {
@@ -116,52 +116,110 @@ const Map = () => {
           )}
         >
           <text>Filter users</text>
-        </div>
+        </div> */}
         {/* Locations on map */}
         <Link
           to="/turbine"
-          style={Object.assign({ left: "60%", top: "85%" }, icon2)}
+          style={Object.assign({ left: "33%", top: "92%" }, icon2)}
         >
-          <GiWindTurbine />
+          <img
+            src={require("../assets/1.png")}
+            alt="Turbine"
+            style={{ width: "3%" }}
+          />
         </Link>
         <Link
           to="/landing"
-          style={Object.assign({ left: "57%", top: "85%" }, icon2)}
+          style={Object.assign({ left: "26%", top: "92%" }, icon2)}
         >
-          <FaCarBattery />
+          <img
+            src={require("../assets/2.png")}
+            alt="Landing"
+            style={{ width: "3%" }}
+          />
         </Link>
         <Link
           to="/h2tcenter"
-          style={Object.assign({ left: "29%", top: "39%" }, icon2)}
+          style={Object.assign({ left: "-9%", top: "43%" }, icon2)}
         >
-          <GiFamilyHouse />
-        </Link>
-        <Link
-          to="/techC"
-          style={Object.assign({ left: "31%", top: "39%" }, icon2)}
-        >
-          <GiFactory />
+          <img
+            src={require("../assets/26.png")}
+            alt="H2TC Center"
+            style={{ width: "3%" }}
+          />
         </Link>
         <Link
           to="/micro"
-          style={Object.assign({ left: "27%", top: "39%" }, icon2)}
+          style={Object.assign({ left: "-6%", top: "43%"  }, icon2)}
         >
-          <GiFactory />
+          <img
+            src={require("../assets/23.png")}
+            alt="Microgrid"
+            style={{ width: "3%" }}
+          />
         </Link>
         <Link
           to="/dominion"
-          style={Object.assign({ left: "25%", top: "33%" }, icon2)}
+          style={Object.assign({ left: "15%", top: "33%" }, icon2)}
         >
-          <GiFactory />
+           <img
+            src={require("../assets/dominionIcon.png")}
+            alt="Dominion"
+            style={{ width: "20%" }}
+          />
         </Link>
         <Link
           to="/vng"
-          style={Object.assign({ left: "30%", top: "47%" }, icon2)}
+          style={Object.assign({ left: "23%", top: "34%" }, icon2)}
         >
-          <GiFactory />
+           <img
+            src={require("../assets/vngIcon.jpg")}
+            alt="Landing"
+            style={{ width: "16%" }}
+          />
+        </Link>
+        <Link
+          to="/port"
+          style={Object.assign({ left: "34%", top: "82%" }, icon2)}
+        >
+           <img
+            src={require("../assets/portIcon.png")}
+            alt="Port of Virginia"
+            style={{ width: "20%" }}
+          />
+        </Link>
+        <Link
+          to="/cox"
+          style={Object.assign({ left: "20%", top: "80%" }, icon2)}
+        >
+           <img
+            src={require("../assets/coxIcon.png")}
+            alt="Cox"
+            style={{ width: "20%" }}
+          />
+        </Link>
+        <Link
+          to="/jefferson"
+          style={Object.assign({ left: "24%", top: "50%" }, icon2)}
+        >
+           <img
+            src={require("../assets/jeffersonIcon.png")}
+            alt="Jefferson Labs"
+            style={{ width: "20%" }}
+          />
+        </Link>
+        <Link
+          to="/naval"
+          style={Object.assign({ left: "36%", top: "73%" }, icon2)}
+        >
+           <img
+            src={require("../assets/navalIcon.jpg")}
+            alt="Naval Base"
+            style={{ width: "20%" }}
+          />
         </Link>
         {/* Extra links */}
-        <Link
+        {/* <Link
           to="/genplant"
           style={Object.assign({ left: "80%", top: "75%" }, link)}
         >
@@ -178,72 +236,70 @@ const Map = () => {
           style={Object.assign({ left: "80%", top: "85%" }, link)}
         >
           Politicians
-        </Link>
+        </Link> */}
         {/* Users on map */}
-        {user && (
-          <div>
-            <Link
-              to="/port"
-              style={Object.assign({ left: "40%", top: "85%" }, icon2)}
-            >
-              <BsFillHouseFill />
-            </Link>
-            <Link
-              to="/canon"
-              style={Object.assign({ left: "31%", top: "42%" }, icon2)}
-            >
-              <BsFillHouseFill />
-            </Link>
-            <Link
-              to="/newportcity"
-              style={Object.assign({ top: "60%", left: "32%" }, icon2)}
-            >
-              <BsFillHouseFill />
-            </Link>
-            <Link
-              to="/langley"
-              style={Object.assign({ left: "35%", top: "44%" }, icon2)}
-            >
-              <BsFillHouseFill />
-            </Link>
-            <Link
-              to="/norfolknaval"
-              style={Object.assign({ left: "40%", top: "65%" }, icon2)}
-            >
-              <BsFillHouseFill />
-            </Link>
-            <Link
-              to="/smithfield"
-              style={Object.assign({ left: "20%", top: "58%" }, icon2)}
-            >
-              <BsFillHouseFill />
-            </Link>
-            <Link
-              to="/hpdata"
-              style={Object.assign({ left: "28%", top: "48%" }, icon2)}
-            >
-              <BsFillHouseFill />
-            </Link>
-            <Link
-              to="/jefferson"
-              style={Object.assign({ left: "29%", top: "34%" }, icon2)}
-            >
-              <BsFillHouseFill />
-            </Link>
-            <Link
-              to="/eustis"
-              style={Object.assign({ left: "23%", top: "38%" }, icon2)}
-            >
-              <BsFillHouseFill />
-            </Link>
-            <Link
-              to="/nasa"
-              style={Object.assign({ left: "37%", top: "44%" }, icon2)}
-            >
-              <BsFillHouseFill />
-            </Link>
-          </div>
-        )}
+        {/* <div>
+          <Link
+            to="/port"
+            style={Object.assign({ left: "40%", top: "85%" }, icon2)}
+          >
+            <BsFillHouseFill />
+          </Link>
+          <Link
+            to="/canon"
+            style={Object.assign({ left: "31%", top: "42%" }, icon2)}
+          >
+            <BsFillHouseFill />
+          </Link>
+          <Link
+            to="/newportcity"
+            style={Object.assign({ top: "60%", left: "32%" }, icon2)}
+          >
+            <BsFillHouseFill />
+          </Link>
+          <Link
+            to="/langley"
+            style={Object.assign({ left: "35%", top: "44%" }, icon2)}
+          >
+            <BsFillHouseFill />
+          </Link>
+          <Link
+            to="/norfolknaval"
+            style={Object.assign({ left: "40%", top: "65%" }, icon2)}
+          >
+            <BsFillHouseFill />
+          </Link>
+          <Link
+            to="/smithfield"
+            style={Object.assign({ left: "20%", top: "58%" }, icon2)}
+          >
+            <BsFillHouseFill />
+          </Link>
+          <Link
+            to="/hpdata"
+            style={Object.assign({ left: "28%", top: "48%" }, icon2)}
+          >
+            <BsFillHouseFill />
+          </Link>
+          <Link
+            to="/jefferson"
+            style={Object.assign({ left: "29%", top: "34%" }, icon2)}
+          >
+            <BsFillHouseFill />
+          </Link>
+          <Link
+            to="/eustis"
+            style={Object.assign({ left: "23%", top: "38%" }, icon2)}
+          >
+            <BsFillHouseFill />
+          </Link>
+          <Link
+            to="/nasa"
+            style={Object.assign({ left: "37%", top: "44%" }, icon2)}
+          >
+            <BsFillHouseFill />
+          </Link>
+        </div> */}
       </body>
     </div>
   );

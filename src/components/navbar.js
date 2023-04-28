@@ -38,10 +38,10 @@ const navbar = () => {
         <NavLink style={link} to="/map">Peninsula Map</NavLink>
       </li>
       <li>
-        <NavLink style={link} to="/use-case">Use Cases / Customers</NavLink>
+        <NavLink style={link} to="/use-case">Use Cases</NavLink>
       </li>
       <li>
-        <NavLink style={link} to="/design">H2TC Design</NavLink>
+        <NavLink style={link} to="/design">H2TC Plan</NavLink>
       </li>
       <li>
         <NavLink style={link} to="/directory">Contact Directory</NavLink>

@@ -1,3 +1,6 @@
+import homeimage from "../assets/Home.png";
+import { Link } from "react-router-dom";
+
 /**
  * Creates a home page with serveral boxes sharing important information and linking to other
  * pages of the website where more information can be found.
@@ -5,131 +8,119 @@
  */
 const Home = () => {
   return (
-    <body className="App-header" style={{ backgroundColor: "#d3d3d3" }}>
+    <body
+      className="App-header"
+      style={{
+        backgroundImage: `url(${homeimage})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "76%",
+        overflow: "hidden",
+        backgroundColor: "#e8f4f8",
+      }}
+    >
       <div
         style={{
-          backgroundColor: "white",
-          width: "30%",
-          height: "auto",
-          border: "2px solid black",
-          top: "20%",
-          left: "10%",
+          top: "38%",
+          left: "18%",
+          width: "12%",
           position: "absolute",
-          padding: 10,
+          textAlign: "center",
         }}
       >
         <header style={{ fontWeight: "bold" }}>Why VT?</header>
-        <p>
-          Energy security and availability is critical for Virginia’s economic
-          development. Clean energy is vital for our planet. VT is uniquely
-          positioned to inspire and equip a generation of citizens who can take
-          on the technical and social challenges of transitioning to a clean
-          energy future for Virginia.
+        <p style={{ fontSize: 12 }}>
+          Inspiring and equipping a generation of citizens who can take on the
+          technical and social challenges of transitioning to a clean energy
+          future for Virginia.
         </p>
       </div>
       <div
         style={{
-          backgroundColor: "white",
-          width: "30%",
-          height: "auto",
-          border: "2px solid black",
-          top: "20%",
-          left: "56%",
+          top: "50%",
+          left: "40.5%",
+          width: "12%",
           position: "absolute",
-          padding: 10,
+          textAlign: "center",
         }}
       >
-        <header style={{ fontWeight: "bold" }}>
-          <a
-            href={
-              "https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.p3"
-            }
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: "none" }}
-          >
-            GoVirginia Charter
-          </a>
-        </header>
-        <ul>
-          <li>Develop 4-6 Use Cases for Green H2</li>
-          <li>Design, build and sustain the H2TC</li>
-          <ul>
-            <li>Dashboard</li>
-            <li>Current Action Items</li>
-          </ul>
-          <li>Develop a workforce certification program</li>
-        </ul>
+        <header style={{ fontWeight: "bold" }}>GoVirginia</header>
+        <Link to="/use-case">
+          <p style={{ fontSize: 14 }}>Use Cases</p>
+        </Link>
+        <Link to="/design">
+          <p style={{ fontSize: 14 }}>H2TC Build</p>
+        </Link>
+        <Link to="/research">
+          <p style={{ fontSize: 14 }}>Workforce</p>
+        </Link>
       </div>
       <div
         style={{
-          backgroundColor: "white",
-          width: "22%",
-          height: "auto",
-          border: "2px solid black",
-          top: "60%",
-          left: "10%",
+          top: "80%",
+          left: "27.2%",
+          width: "12%",
           position: "absolute",
-          padding: 10,
+          textAlign: "center",
         }}
       >
-        <header style={{ fontWeight: "bold" }}>
-          <a href="/h2hub" style={{ textDecoration: "none" }}>
-            H2 Hub Project
-          </a>
-        </header>
-        <ul>
-          <li>Financials</li>
-          <li>Proposal</li>
-          <li>
-            <a
-              href="https://docs.google.com/spreadsheets/d/1v6aOZfqOBMFHpp8F3c-rCi136W0RsfsdUEgPgCa3GXc/edit#gid=0"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Go Fast Plan
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div
-        style={{
-          backgroundColor: "white",
-          width: "10%",
-          height: "auto",
-          border: "2px solid black",
-          top: "60%",
-          left: "45%",
-          position: "absolute",
-          padding: 10,
-        }}
-      >
+        <header style={{ fontWeight: "bold" }}>Go Fast Hub</header>
         <a
-          href="https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.g22d80158ac8_0_182"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ textDecoration: "none" }}
+          href="https://docs.google.com/spreadsheets/d/1V_t2LYVpX-3H4vuKik09D2zFEv5HQ5nMjd7-uLxNUgw/edit?usp=sharing"
         >
-          <header style={{ fontWeight: "bold" }}>Project Plans</header>
+          <p style={{ fontSize: 14 }}>Financials</p>
         </a>
-        <div style={{ padding: 40 }} />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://docs.google.com/spreadsheets/d/1v6aOZfqOBMFHpp8F3c-rCi136W0RsfsdUEgPgCa3GXc/edit?usp=sharing"
+        >
+          <p style={{ fontSize: 14 }}>GoFast Plan</p>
+        </a>
       </div>
       <div
         style={{
-          top: "60%",
-          left: "67%",
-          border: "2px solid black",
+          top: "14%",
+          left: "62.5%",
+          width: "12%",
           position: "absolute",
+          textAlign: "center",
         }}
       >
-        <a href="/research">
-          <img
-            src={require("../assets/research.png")}
-            alt="Research think tank"
-            style={{ marginBottom: -4 }}
-          />
-        </a>
+        <Link to="/ecosystem">
+          <p style={{ fontSize: 12 }}>Ecosystem</p>
+        </Link>
+        <Link to="/map">
+          <p style={{ fontSize: 12 }}>Peninsula Map</p>
+        </Link>
+        <Link to="/use-case">
+          <p style={{ fontSize: 12 }}>Use Cases</p>
+        </Link>
+        <Link to="/design">
+          <p style={{ fontSize: 12 }}>H2TC Plan</p>
+        </Link>
+        <Link to="/directory">
+          <p style={{ fontSize: 12 }}>Contact Directory</p>
+        </Link>
       </div>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit?usp=sharing&ouid=117891202262649805610&rtpof=true&sd=true"
+      >
+        <img
+          style={{
+            position: "absolute",
+            top: "70%",
+            left: "61.7%",
+            scale: "67%",
+          }}
+          src={require("../assets/research.png")}
+          alt="Research think tank"
+        />
+      </a>
     </body>
   );
 };

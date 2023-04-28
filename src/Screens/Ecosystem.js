@@ -21,7 +21,7 @@ const Ecosystem = () => {
           style={{
             backgroundColor: "transparent",
             // border: "1px solid gray",
-            padding: 52,
+            padding: 42,
             position: "absolute",
             left: "66%",
             top: "56%",
@@ -29,7 +29,9 @@ const Ecosystem = () => {
           href="https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.g22d80158ac8_0_45"
           target="_blank"
           rel="noopener noreferrer"
-        />
+        >
+          <br />
+        </a>
         <a
           style={{
             backgroundColor: "transparent",
@@ -41,11 +43,13 @@ const Ecosystem = () => {
           href="https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.g22d80158ac8_0_0"
           target="_blank"
           rel="noopener noreferrer"
-        />
+        >
+          <br />
+        </a>
         <a
           style={{
             backgroundColor: "transparent",
-            padding: 50,
+            padding: 44,
             position: "absolute",
             left: "31%",
             top: "26%",
@@ -53,7 +57,9 @@ const Ecosystem = () => {
           href="https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.p5"
           target="_blank"
           rel="noopener noreferrer"
-        />
+        >
+          <br />
+        </a>
         <a
           style={{
             backgroundColor: "transparent",
@@ -65,23 +71,27 @@ const Ecosystem = () => {
           href="https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.p7"
           target="_blank"
           rel="noopener noreferrer"
-        />
+        >
+          <br />
+        </a>
         <a
           style={{
             backgroundColor: "transparent",
-            padding: 50,
+            padding: 46,
             position: "absolute",
             left: "22%",
-            top: "50%",
+            top: "48%",
           }}
           href="https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.p13"
           target="_blank"
           rel="noopener noreferrer"
-        />
+        >
+          <br />
+        </a>
         <a
           style={{
             backgroundColor: "transparent",
-            padding: 50,
+            padding: 40,
             position: "absolute",
             left: "22%",
             top: "68%",
@@ -89,7 +99,9 @@ const Ecosystem = () => {
           href="https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.p15"
           target="_blank"
           rel="noopener noreferrer"
-        />
+        >
+          <br />
+        </a>
         <a
           style={{
             backgroundColor: "transparent",
@@ -101,11 +113,13 @@ const Ecosystem = () => {
           href="https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.p14"
           target="_blank"
           rel="noopener noreferrer"
-        />
+        >
+          <br />
+        </a>
         <a
           style={{
             backgroundColor: "transparent",
-            padding: 70,
+            padding: 50,
             position: "absolute",
             left: "41%",
             top: "48%",
@@ -113,7 +127,9 @@ const Ecosystem = () => {
           href="https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.p10"
           target="_blank"
           rel="noopener noreferrer"
-        />
+        >
+          <br />
+        </a>
         <a
           style={{
             backgroundColor: "transparent",
@@ -123,7 +139,9 @@ const Ecosystem = () => {
             top: "46%",
           }}
           href="/h2tcenter"
-        />
+        >
+          <br />
+        </a>
         <a
           style={{
             backgroundColor: "transparent",
@@ -135,7 +153,9 @@ const Ecosystem = () => {
           href="https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.p9"
           target="_blank"
           rel="noopener noreferrer"
-        />
+        >
+          <br />
+        </a>
         <a
           style={{
             backgroundColor: "transparent",
@@ -147,7 +167,9 @@ const Ecosystem = () => {
           href="https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.p9"
           target="_blank"
           rel="noopener noreferrer"
-        />
+        >
+          <br />
+        </a>
         <a
           style={{
             backgroundColor: "transparent",
@@ -159,11 +181,13 @@ const Ecosystem = () => {
           href="https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.p9"
           target="_blank"
           rel="noopener noreferrer"
-        />
+        >
+          <br />
+        </a>
         <a
           style={{
             backgroundColor: "transparent",
-            padding: 50,
+            padding: 30,
             position: "absolute",
             left: "67%",
             top: "74%",
@@ -171,7 +195,9 @@ const Ecosystem = () => {
           href="https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.p10"
           target="_blank"
           rel="noopener noreferrer"
-        />
+        >
+          <br />
+        </a>
         <a
           style={{
             backgroundColor: "transparent",
@@ -183,7 +209,9 @@ const Ecosystem = () => {
           href="https://docs.google.com/presentation/d/1ifc5ZlA4CIbXS9WqdMIchXECRf33XTxU/edit#slide=id.p8"
           target="_blank"
           rel="noopener noreferrer"
-        />
+        >
+          <br />
+        </a>
       </body>
     </div>
   );

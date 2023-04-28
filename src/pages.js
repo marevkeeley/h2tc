@@ -24,28 +24,18 @@ const pages = [
     },
     {
         id: 4,
-        name: "Use Cases / Customers",
+        name: "Use Cases",
         path: "/use-case",
     },
     {
         id: 5,
-        name: "Design",
+        name: "Plan",
         path: "/design",
     },
     {
         id: 6,
         name: "Directory",
         path: "/directory",
-    },
-    {
-        id: 7,
-        name: "GoVirginia",
-        path: "/govirginia",
-    },
-    {
-        id: 8,
-        name: "Hydrogen Hub",
-        path: "/h2hub",
     },
     {
         id: 9,
@@ -58,21 +48,6 @@ const pages = [
         path: "/turbine",
     },
     {
-        id: 11,
-        name: "Genplant",
-        path: "/genplant",
-    },
-    {
-        id: 12,
-        name: "Siemens",
-        path: "/siemens",
-    },
-    {
-        id: 13,
-        name: "Politicians",
-        path: "/politicians",
-    },
-    {
         id: 14,
         name: "The Landing",
         path: "/landing",
@@ -81,11 +56,6 @@ const pages = [
         id: 15,
         name: "Hydrogen Tech Center",
         path: "/h2tcenter",
-    },
-    {
-        id: 16,
-        name: "Tech Center Micro Grid",
-        path: "/techC",
     },
     {
         id: 17,
@@ -108,34 +78,9 @@ const pages = [
         path: "/port",
     },
     {
-        id: 21,
-        name: "Canon",
-        path: "/canon",
-    },
-    {
-        id: 22,
-        name: "Newport City",
-        path: "/newportcity",
-    },
-    {
-        id: 23,
-        name: "Langley Air Force Base",
-        path: "/langley",
-    },
-    {
         id: 24,
         name: "Norfolk Naval Base",
         path: "/norfolknaval",
-    },
-    {
-        id: 25,
-        name: "Smithfield City",
-        path: "/smithfield",
-    },
-    {
-        id: 26,
-        name: "HP Data Center",
-        path: "/hpdata",
     },
     {
         id: 27,
@@ -143,14 +88,9 @@ const pages = [
         path: "/jefferson",
     },
     {
-        id: 28,
-        name: "Eustis Fort",
-        path: "/eustis",
-    },
-    {
-        id: 29,
-        name: "NASA",
-        path: "/nasa",
+        id: 27,
+        name: "Cox",
+        path: "/cox",
     },
 ];
 
