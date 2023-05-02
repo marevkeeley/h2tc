@@ -15,7 +15,7 @@ const text = {
   textAlign: "center",
   position: "absolute",
   fontSize: 16,
-  color: "#0047AB",
+  color: "black",
 };
 
 /**
@@ -64,14 +64,14 @@ const Map = () => {
               }}
             />
           }
-          position="right center"
+          position="right"
         >
           <img
             src={require("../assets/smallmap.jpg")}
             alt="H2TechCenter map"
             style={{
               alignItem: "center",
-              width: "300%",
+              width: "276%",
               backgroundColor: "white",
               margin: -10,
             }}
