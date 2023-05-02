@@ -1,6 +1,8 @@
 import "../App.css";
 import map from "../assets/map.png";
 import { Link } from "react-router-dom";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
 
 //Styles for various parts of the page
 const icon = {
@@ -8,25 +10,6 @@ const icon = {
   position: "absolute",
   color: "#0047AB",
 };
-
-const icon2 = {
-  textAlign: "center",
-  position: "absolute",
-  color: "#0047AB",
-  scale: "150%",
-};
-
-// const link = {
-//   backgroundColor: "white",
-//   borderRadius: 10,
-//   padding: 5,
-//   textAlign: "center",
-//   position: "absolute",
-//   fontSize: 16,
-//   underlined: "false",
-//   textDecoration: "none",
-//   color: "#0047AB",
-// };
 
 const text = {
   textAlign: "center",
@@ -65,7 +48,65 @@ const Map = () => {
         overflow: "hidden",
       }}
     >
+      {/* Zoomed in map with popup and icons */}
       <body style={{ overflow: "hidden" }} className="Map">
+        <Popup
+          trigger={
+            <img
+              src={require("../assets/smalllogo.png")}
+              alt="H2TC Center"
+              style={{
+                width: "3%",
+                backgroundColor: "white",
+                position: "absolute",
+                left: "29%",
+                top: "43%",
+              }}
+            />
+          }
+          position="right center"
+        >
+          <img
+            src={require("../assets/smallmap.jpg")}
+            alt="H2TechCenter map"
+            style={{
+              alignItem: "center",
+              width: "300%",
+              backgroundColor: "white",
+              margin: -10,
+            }}
+          />
+          <img
+            src={require("../assets/smalllogo.png")}
+            alt="H2TC Center"
+            style={{ position: "absolute", top: "50%", left: "102%", backgroundColor: 'white', width: '30%' }}
+          />
+          <img
+            src={require("../assets/jeffersonIcon.png")}
+            alt="Jefferson labs"
+            style={{ position: "absolute", top: "84%", left: "102%", width: '40%' }}
+          />
+          <img
+            src={require("../assets/23.png")}
+            alt="microgrid"
+            style={{ position: "absolute", top: "72%", left: "140%", width: '20%' }}
+          />
+           <img
+            src={require("../assets/6.png")}
+            alt="microgrid"
+            style={{ position: "absolute", top: "78%", left: "160%", width: '12%' }}
+          />
+          <img
+            src={require("../assets/3.png")}
+            alt="microgrid"
+            style={{ position: "absolute", top: "80%", left: "176%", width: '20%' }}
+          />
+          <img
+            src={require("../assets/2.png")}
+            alt="microgrid"
+            style={{ position: "absolute", top: "84%", left: "200%", width: '20%' }}
+          />
+        </Popup>
         {/* Key beside map */}
         <div style={Object.assign({ left: "82%", top: "12%" }, text)}>
           <p style={{ fontWeight: "bold" }}>Key</p>
@@ -120,111 +161,114 @@ const Map = () => {
         {/* Locations on map */}
         <Link
           to="/turbine"
-          style={Object.assign({ left: "33%", top: "92%" }, icon2)}
+          style={{
+            position: "absolute",
+            scale: "4%",
+            left: "34%",
+            top: "14%",
+          }}
         >
-          <img
-            src={require("../assets/1.png")}
-            alt="Turbine"
-            style={{ width: "2%" }}
-          />
+          <img src={require("../assets/1.png")} alt="Turbine" />
         </Link>
         <Link
           to="/landing"
-          style={Object.assign({ left: "26%", top: "92%" }, icon2)}
+          style={{ left: "26%", top: "25%", position: "absolute", scale: "4%" }}
         >
-          <img
-            src={require("../assets/2.png")}
-            alt="Landing"
-            style={{ width: "2%" }}
-          />
-        </Link>
-        <Link
-          to="/h2tcenter"
-          style={Object.assign({ left: "26%", top: "43%" }, icon2)}
-        >
-          <img
-            src={require("../assets/smalllogo.png")}
-            alt="H2TC Center"
-            style={{ width: "16%", backgroundColor: "white" }}
-          />
+          <img src={require("../assets/2.png")} alt="Landing" />
         </Link>
         <Link
           to="/micro"
-          style={Object.assign({ left: "-6%", top: "43%" }, icon2)}
+          style={{
+            left: "-6%",
+            top: "-40%",
+            position: "absolute",
+            scale: "4%",
+          }}
         >
-          <img
-            src={require("../assets/23.png")}
-            alt="Microgrid"
-            style={{ width: "2%" }}
-          />
+          <img src={require("../assets/23.png")} alt="Microgrid" />
         </Link>
         <Link
           to="/dominion"
-          style={Object.assign({ left: "15%", top: "33%" }, icon2)}
+          style={{
+            left: "15%",
+            top: "33%",
+            position: "absolute",
+            scale: "18%",
+          }}
         >
-          <img
-            src={require("../assets/dominionIcon.png")}
-            alt="Dominion"
-            style={{ width: "10%" }}
-          />
+          <img src={require("../assets/dominionIcon.png")} alt="Dominion" />
         </Link>
         <Link
           to="/vng"
-          style={Object.assign({ left: "23%", top: "34%" }, icon2)}
+          style={{
+            left: "23%",
+            top: "20%",
+            position: "absolute",
+            scale: "18%",
+          }}
         >
           <img
             src={require("../assets/vngIcon.jpg")}
-            alt="Landing"
-            style={{ width: "10%" }}
+            alt="Virginia Natural Gas"
           />
         </Link>
         <Link
           to="/port"
-          style={Object.assign({ left: "0%", top: "82%" }, icon2)}
+          style={{
+            left: "5.5%",
+            top: "75%",
+            position: "absolute",
+            scale: "22%",
+          }}
         >
           <div>
             <img
               src={require("../assets/portIcon.png")}
               alt="Port of Virginia"
-              style={{ width: "4%" }}
             />
             <img
               src={require("../assets/2.png")}
               alt="Production"
-              style={{ width: "2%" }}
+              style={{ width: "10%" }}
             />
           </div>
         </Link>
         <Link
           to="/cox"
-          style={Object.assign({ left: "20%", top: "80%" }, icon2)}
+          style={{
+            left: "20%",
+            top: "80%",
+            position: "absolute",
+            scale: "24%",
+          }}
         >
-          <img
-            src={require("../assets/coxIcon.png")}
-            alt="Cox"
-            style={{ width: "10%" }}
-          />
+          <img src={require("../assets/coxIcon.png")} alt="Cox" />
         </Link>
         <Link
           to="/jefferson"
-          style={Object.assign({ left: "24%", top: "50%" }, icon2)}
+          style={{
+            position: "absolute",
+            scale: "25%",
+            left: "24%",
+            top: "48%",
+          }}
         >
           <img
             src={require("../assets/jeffersonIcon.png")}
             alt="Jefferson Labs"
-            style={{ width: "10%" }}
           />
         </Link>
-        <Link
-          to="/naval"
-          style={Object.assign({ left: "36%", top: "73%" }, icon2)}
+        <a
+          href="/naval"
+          style={{
+            position: "absolute",
+            left: "36%",
+            top: "61%",
+            scale: "20%",
+          }}
         >
-          <img
-            src={require("../assets/navalIcon.jpg")}
-            alt="Naval Base"
-            style={{ width: "10%" }}
-          />
-        </Link>
+          <img src={require("../assets/navalIcon.jpg")} alt="Naval Base" />
+        </a>
         {/* Extra links */}
         {/* <Link
           to="/genplant"
