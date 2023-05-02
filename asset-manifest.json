@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c0715b2f.css",
-    "main.js": "/static/js/main.1ac09f47.js",
+    "main.css": "/static/css/main.7464b398.css",
+    "main.js": "/static/js/main.ea1fac6e.js",
     "static/js/787.2dd578d1.chunk.js": "/static/js/787.2dd578d1.chunk.js",
     "static/media/Home.png": "/static/media/Home.2bb42f805f964fc222f1.png",
     "static/media/offshore.png": "/static/media/offshore.3ec5a40e09f19b24bdf6.png",
@@ -11,24 +11,27 @@
     "static/media/dominion.png": "/static/media/dominion.334bc7671c70e42e68f1.png",
     "static/media/landing.png": "/static/media/landing.45be27addfdd415aa0cd.png",
     "static/media/map.png": "/static/media/map.6c48867800456625ed24.png",
+    "static/media/smallmap.jpg": "/static/media/smallmap.49bb4cf8dcc3a17d0759.jpg",
     "static/media/ecosystem.png": "/static/media/ecosystem.b6d04d896705688a6480.png",
     "static/media/double.png": "/static/media/double.6ac1fbe0b6b586ca42f1.png",
+    "static/media/dash.png": "/static/media/dash.3f436d8a3a94489e876b.png",
     "static/media/1.png": "/static/media/1.d8d730b659d19857ddcc.png",
     "static/media/portIcon.png": "/static/media/portIcon.55cf4baf2fbae9acd600.png",
+    "static/media/3.png": "/static/media/3.de276e82ec91745556ca.png",
     "static/media/23.png": "/static/media/23.1bbe6afe2e71f5e26b3a.png",
     "static/media/logo.png": "/static/media/logo.5ce2cd2c1566a0342d52.png",
     "static/media/2.png": "/static/media/2.273844e97d9525c03c57.png",
+    "static/media/6.png": "/static/media/6.9bd5c2d4bd6fda670d61.png",
     "static/media/research.png": "/static/media/research.741673913e8da8aad091.png",
     "static/media/navalIcon.jpg": "/static/media/navalIcon.7411859f4229bac6d491.jpg",
-    "static/media/26.png": "/static/media/26.53b53b2cc9e12af7beb3.png",
     "static/media/dominionIcon.png": "/static/media/dominionIcon.5a550ec1cdf4ce429673.png",
     "index.html": "/index.html",
-    "main.c0715b2f.css.map": "/static/css/main.c0715b2f.css.map",
-    "main.1ac09f47.js.map": "/static/js/main.1ac09f47.js.map",
+    "main.7464b398.css.map": "/static/css/main.7464b398.css.map",
+    "main.ea1fac6e.js.map": "/static/js/main.ea1fac6e.js.map",
     "787.2dd578d1.chunk.js.map": "/static/js/787.2dd578d1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0715b2f.css",
-    "static/js/main.1ac09f47.js"
+    "static/css/main.7464b398.css",
+    "static/js/main.ea1fac6e.js"
   ]
 }
