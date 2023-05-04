@@ -129,13 +129,22 @@ const Home = () => {
         <img
           style={{
             position: "absolute",
-            top: "-76%",
-            left: "34%",
+            top: "-80%",
+            left: "33.5%",
             scale: "4%",
           }}
           src={require("../assets/file.png")}
           alt="Research think tank"
         />
+        <p
+          style={{
+            position: "absolute",
+            top: "92%",
+            left: "92%",
+          }}
+        >
+          Presentations
+        </p>
       </a>
     </body>
   );
