@@ -121,6 +121,22 @@ const Home = () => {
           alt="Research think tank"
         />
       </a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://drive.google.com/drive/folders/1IILTvHtuz227nPHJ9qU1IjWPgh-sPv3H"
+      >
+        <img
+          style={{
+            position: "absolute",
+            top: "-76%",
+            left: "34%",
+            scale: "4%",
+          }}
+          src={require("../assets/file.png")}
+          alt="Research think tank"
+        />
+      </a>
     </body>
   );
 };
