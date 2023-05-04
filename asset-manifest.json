@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7464b398.css",
-    "main.js": "/static/js/main.77a89c3d.js",
+    "main.js": "/static/js/main.66359bf5.js",
     "static/js/787.2dd578d1.chunk.js": "/static/js/787.2dd578d1.chunk.js",
     "static/media/Home.png": "/static/media/Home.2bb42f805f964fc222f1.png",
     "static/media/offshore.png": "/static/media/offshore.3ec5a40e09f19b24bdf6.png",
@@ -16,6 +16,7 @@
     "static/media/double.png": "/static/media/double.6ac1fbe0b6b586ca42f1.png",
     "static/media/dash.png": "/static/media/dash.3f436d8a3a94489e876b.png",
     "static/media/1.png": "/static/media/1.d8d730b659d19857ddcc.png",
+    "static/media/file.png": "/static/media/file.d4e688961ab0b63a69d3.png",
     "static/media/portIcon.png": "/static/media/portIcon.55cf4baf2fbae9acd600.png",
     "static/media/3.png": "/static/media/3.de276e82ec91745556ca.png",
     "static/media/23.png": "/static/media/23.1bbe6afe2e71f5e26b3a.png",
@@ -28,11 +29,11 @@
     "static/media/dominionIcon.png": "/static/media/dominionIcon.5a550ec1cdf4ce429673.png",
     "index.html": "/index.html",
     "main.7464b398.css.map": "/static/css/main.7464b398.css.map",
-    "main.77a89c3d.js.map": "/static/js/main.77a89c3d.js.map",
+    "main.66359bf5.js.map": "/static/js/main.66359bf5.js.map",
     "787.2dd578d1.chunk.js.map": "/static/js/787.2dd578d1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7464b398.css",
-    "static/js/main.77a89c3d.js"
+    "static/js/main.66359bf5.js"
   ]
 }
